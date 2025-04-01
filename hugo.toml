@@ -1,0 +1,21 @@
+baseURL = 'https://vsaxena2711.github.io/'
+languageCode = 'en-us'
+title = 'InfraMind'
+theme = 'PaperMod'
+pagerSize = 5
+
+[params]
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  defaultTheme = "auto"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
