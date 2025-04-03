@@ -12,6 +12,7 @@ pagerSize = 5
   ShowCodeCopyButtons = true
   ShowToc = true
   defaultTheme = "auto"
+  mainSections = []
 
 [menu]
 
