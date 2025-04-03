@@ -1,0 +1,89 @@
+/* Hide any horizontal lines */
+hr {
+    display: none;
+  }
+  
+  /* Global font and background */
+  body {
+    background-color: #f9f9fc;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Center and style homepage intro */
+  .homepage-intro {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .homepage-intro h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .homepage-intro p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Style "Explore" section links */
+  .homepage-links {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .homepage-links h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .homepage-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .homepage-links li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  
+  .homepage-links li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0078d4;
+    transition: color 0.3s ease;
+  }
+  
+  .homepage-links li a:hover {
+    color: #005a9e;
+    text-decoration: underline;
+  }
+  
+  /* Optional: round corners and light card effect */
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 800px;
+  }
+
+  body {
+    background-color: #fffbe6 !important; /* Pale yellow background to test */
+  }
+  
+  h1 {
+    color: darkgreen !important;  /* Makes your title green for testing */
+  }
+  
+  nav a {
+    color: #ff5722 !important;    /* Orange navbar links for visibility */
+  }
+  
