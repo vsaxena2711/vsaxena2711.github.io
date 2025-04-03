@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on InfraMind</title>
-    <link>http://localhost:1313/page/</link>
+    <link>https://vsaxena2711.github.io/page/</link>
     <description>Recent content in Pages on InfraMind</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vsaxena2711.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://vsaxena2711.github.io/about/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://vsaxena2711.github.io/about/</guid>
       <description>&lt;p&gt;Hi, I’m &lt;strong&gt;Vaibhav&lt;/strong&gt;, a DevOps engineer on a mission to simplify cloud complexity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to IaC with Terraform</title>
-      <link>http://localhost:1313/iac/</link>
+      <link>https://vsaxena2711.github.io/iac/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/iac/</guid>
+      <guid>https://vsaxena2711.github.io/iac/</guid>
       <description>&lt;p&gt;Introduction to IaC with Terraform&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using Azure Copilot with ARM &amp; Terraform</title>
-      <link>http://localhost:1313/ai/</link>
+      <link>https://vsaxena2711.github.io/ai/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ai/</guid>
+      <guid>https://vsaxena2711.github.io/ai/</guid>
       <description>&lt;p&gt;Using Azure Copilot with ARM &amp;amp; Terraform&lt;/p&gt;</description>
     </item>
   </channel>
