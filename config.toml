@@ -15,7 +15,8 @@ theme = "PaperMod"
   ShowCodeCopyButtons = true
   ShowToc = true
   defaultTheme = "auto"
-  googleAnalytics = "G-Q9KS4FM50S"
+  env = "production"
+  gtagID = "G-Q9KS4FM50S"
 
 mainSections = []
 
