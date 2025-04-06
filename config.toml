@@ -17,6 +17,7 @@ theme = "PaperMod"
   defaultTheme = "auto"
   env = "production"
   gtagID = "G-Q9KS4FM50S"
+  customCSS = ["css/custom.css"]
 
 mainSections = []
 

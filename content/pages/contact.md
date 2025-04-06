@@ -1,7 +1,5 @@
 ---
-title: "Contact"
-url: "/contact/"
+title: "Get in Touch"
 layout: "contact"
+url: "/contact/"
 ---
-
-Feel free to reach out using the form below!

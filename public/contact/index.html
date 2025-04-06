@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact | AInfraMinds</title>
+    <title>Get in Touch | AInfraMinds</title>
 
     
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9KS4FM50S"></script>
@@ -13,11 +13,13 @@
   gtag('js', new Date());
 
   gtag('config', 'G-Q9KS4FM50S');
-</script> 
+</script>
+<link rel="stylesheet" href="/css/custom.css">
+ 
 
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Contact | AInfraMinds</title>
+<title>Get in Touch | AInfraMinds</title>
 
     <link rel="stylesheet" href="/css/main.css">
 
@@ -44,22 +46,40 @@
 
     
 <main class="main" style="max-width: 700px; margin: auto; padding: 2rem;">
-  <h1>Contact</h1>
-  <p><p>Feel free to reach out using the form below!</p>
-</p>
 
-  <form action="https://formspree.io/f/xdkepoez" method="POST">
+  <div class="contact-intro" style="text-align: center; margin-bottom: 2rem;">
+    <h1>Let's Connect 🤝</h1>
+    <p>Whether it's feedback, suggestions, appreciation, or just a friendly hello 👋 — feel free to drop me a message.</p>
+  </div>
+
+  <form
+    action="https://formspree.io/f/xdkepoez"
+    method="POST"
+    style="text-align: left;"
+  >
     <label for="name">Name</label><br>
-    <input type="text" name="name" required><br><br>
+    <input type="text" name="name" id="name" required
+      style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"><br>
 
     <label for="email">Email</label><br>
-    <input type="email" name="_replyto" required><br><br>
+    <input type="email" name="_replyto" id="email" required
+      style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"><br>
+
+    <label for="subject">Subject</label><br>
+    <input type="text" name="subject" id="subject"
+      placeholder="Feedback, Suggestion, Question..."
+      style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"><br>
 
     <label for="message">Message</label><br>
-    <textarea name="message" rows="6" required></textarea><br><br>
+    <textarea name="message" id="message" rows="6" required
+      style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;"></textarea><br>
 
-    <button type="submit">Send</button>
+    <button type="submit"
+      style="background-color: #0078d4; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 0.3rem; cursor: pointer;">
+      📩 Send Message
+    </button>
   </form>
+
 </main>
 
 
