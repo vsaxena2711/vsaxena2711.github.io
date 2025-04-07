@@ -1,50 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-us" dir="ltr">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Me | AInfraMinds</title>
-
-    
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9KS4FM50S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Q9KS4FM50S');
-</script>
-<link rel="stylesheet" href="/css/custom.css">
- 
-
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>About Me | AInfraMinds</title>
-
-    <link rel="stylesheet" href="/css/main.css">
-
-
-      <script src="/js/main.js"></script>
-
-
-  </head>
-  <body>
-    <h1>AInfraMinds</h1>
-
-  <nav>
-    <ul>
-    <li>
-      <a href="/about/">About</a>
-    </li>
-    <li>
-      <a href="/contact/">Contact</a>
-    </li>
-    </ul>
-  </nav>
-
-
-
-    
+{{ define "main" }}
 <main class="main">
   <div style="text-align: center; margin-top: 2rem;">
     <a href="/" class="home-button">🏠 Take Me Home</a>
@@ -52,14 +6,14 @@
   
   <div class="about-wrapper">
 
-    
+    <!-- Photo Section -->
     <div class="about-card" style="text-align: center;">
       <img src="/images/vaibhav.png" alt="Vaibhav Saxena" class="about-photo">
       <h1>👋 Hey there! I'm <span class="highlight-name">Vaibhav</span></h1>
       <p>DevOps Engineer | Infra as Code Enthusiast | AI Explorer</p>
     </div>
 
-    
+    <!-- Rest of your about-card sections here -->
   </div>
   
   <section class="about-wrapper">
@@ -99,9 +53,4 @@
 
   </section>
 </main>
-
-
-    <p>Copyright 2025. All rights reserved.</p>
-
-  </body>
-</html>
+{{ end }}
