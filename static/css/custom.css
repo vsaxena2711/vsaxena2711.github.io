@@ -51,14 +51,16 @@ nav li {
 
 /* Main Layout */
 main.main {
-  max-width: 800px;
+  width: 900%;
+  max-width: 1400px;
   margin: 2rem auto;
-  padding: 1rem;
+  padding: 2rem;
   background: white;
   border-radius: 1rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   animation: fadeIn 0.6s ease;
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
