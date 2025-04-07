@@ -1,4 +1,153 @@
+/* Base Theme */
 body {
-    background-color: #fffbe6 !important; /* Light yellow background just to test */
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background 0.3s ease;
+}
+
+a {
+  color: #4f46e5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1e40af;
+}
+
+/* Header and Navigation */
+header {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #4f46e5;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  font-weight: 600;
+}
+
+/* Main Layout */
+main.main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Homepage Explore Section */
+.homepage-intro {
+  text-align: center;
+  padding: 1rem;
+  background: #f0f4ff;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.homepage-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  color: #1e3a8a;
+}
+
+.homepage-intro p {
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+.homepage-links h2 {
+  font-size: 1.3rem;
+  color: #1d4ed8;
+}
+
+.homepage-links ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.homepage-links li a {
+  padding: 0.6rem 1.2rem;
+  background-color: #4f46e5;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.homepage-links li a:hover {
+  background-color: #1e3a8a;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Buttons */
+button, .button {
+  background-color: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: #059669;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
   }
-  
+
+  .homepage-links ul {
+    flex-direction: column;
+  }
+}
