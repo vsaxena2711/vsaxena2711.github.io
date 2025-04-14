@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Terragrunt"
-date: 2025-04-13
+date: 2025-04-12
 draft: false
 ---
 

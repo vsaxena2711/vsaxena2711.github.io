@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Terraform"
-date: 2025-04-13
+date: 2025-04-10
 draft: false
 ---
 
