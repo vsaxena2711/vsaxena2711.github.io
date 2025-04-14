@@ -2,24 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on AInfraMinds</title>
-    <link>https://vsaxena2711.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on AInfraMinds</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://vsaxena2711.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Terraform</title>
+      <link>http://localhost:1313/iac/concepts/introduction-to-terraform/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/iac/concepts/introduction-to-terraform/</guid>
+      <description>&lt;h2 id=&#34;introduction-to-terraform&#34;&gt;Introduction to Terraform&lt;/h2&gt;&#xA;&lt;p&gt;Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp. It enables users to define and provision infrastructure resources across cloud providers using a declarative configuration language called HCL (HashiCorp Configuration Language).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-terraform&#34;&gt;What is Terraform?&lt;/h2&gt;&#xA;&lt;p&gt;Think of Terraform like a blueprint for your infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;🏗️ &lt;strong&gt;Real-world analogy&lt;/strong&gt;: Imagine you&amp;rsquo;re building a house. You don&amp;rsquo;t start by randomly placing bricks. Instead, you start with an architectural plan. That plan details how many rooms, where the doors and windows go, what the plumbing layout looks like, and so on. Similarly, Terraform lets you define the “plan” of your cloud infrastructure — virtual machines, networks, databases — all written in code.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to Terragrunt</title>
+      <link>http://localhost:1313/iac/concepts/introduction-to-terragrunt/</link>
+      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/iac/concepts/introduction-to-terragrunt/</guid>
+      <description>&lt;h2 id=&#34;introduction-to-terragrunt&#34;&gt;Introduction to Terragrunt&lt;/h2&gt;&#xA;&lt;p&gt;Terragrunt is a thin wrapper around Terraform that helps manage complex Infrastructure as Code (IaC) setups by providing powerful tools for automation, DRY (Don&amp;rsquo;t Repeat Yourself) configuration, and environment-level orchestration.&lt;/p&gt;&#xA;&lt;p&gt;If Terraform is your toolbox for provisioning infrastructure, then Terragrunt is the engineer who carries that toolbox from one environment to another, making sure all your tools are configured correctly and reused effectively.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;real-world-analogy-&#34;&gt;Real-World Analogy 🏗️🔁&lt;/h2&gt;&#xA;&lt;p&gt;🧰 &lt;strong&gt;Terraform&lt;/strong&gt; is like a set of high-quality tools: a hammer, a drill, a tape measure, and so on. Each tool does a job, and you use them to build your cloud infrastructure.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About Me</title>
-      <link>https://vsaxena2711.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://vsaxena2711.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description></description>
     </item>
     <item>
       <title>Get in Touch</title>
-      <link>https://vsaxena2711.github.io/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vsaxena2711.github.io/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description></description>
     </item>
   </channel>

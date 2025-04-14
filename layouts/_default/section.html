@@ -12,7 +12,7 @@
     <h2 style="margin-top: 2rem;">📚 Blog Posts</h2>
     <ul class="section-posts">
       {{ range .Pages }}
-        <li><a href="{{ .RelPermalink }}" class="home-button">{{ .Title }}</a></li>
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
       {{ end }}
     </ul>
 

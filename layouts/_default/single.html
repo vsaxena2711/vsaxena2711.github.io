@@ -1,6 +1,20 @@
 {{ define "main" }}
 <main class="main">
+    <p style="color: #6b7280; font-size: 0.9rem; margin-top: -0.5rem;">
+    🗓️ Published on {{ .Date.Format "January 2, 2006" }}
+  </p>
   {{ .Content }}
+
+  {{ if strings.HasPrefix .RelPermalink "/iac/concepts/" }}
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="/iac/concepts/" class="home-button">👉 Return to Infra Concepts & Insights</a>
+    </div>
+    <div style="text-align: center; margin-top: 1rem;">
+      <a href="/iac/" class="home-button">📦 Return to Infra World</a>
+      <a href="/" class="home-button">🏠 Take Me Home</a>
+    </div>
+  {{ end }}
+
   {{ partial "comments.html" . }}
 </main>
 {{ end }}

@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code in Action on AInfraMinds</title>
-    <link>https://vsaxena2711.github.io/iac/code-in-action/</link>
+    <link>http://localhost:1313/iac/code-in-action/</link>
     <description>Recent content in Code in Action on AInfraMinds</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://vsaxena2711.github.io/iac/code-in-action/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/iac/code-in-action/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
