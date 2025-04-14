@@ -5,3 +5,36 @@ layout: "section"
 
 Welcome to the **Concepts & Insights** zone 🧠  
 Here you'll find explanations, design patterns, and architecture-level breakdowns for Infrastructure as Code in Azure using Terraform.
+{{ define "main" }}
+<main class="main">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Content }}</p>
+
+  {{ if eq .Title "IaC (Azure + Terraform)" }}
+    <div class="homepage-links" style="margin-top: 2rem;">
+      <a class="button" href="/iac/concepts/">📚 Concepts & Insights</a>
+      <a class="button" href="/iac/code-in-action/">💻 Code in Action</a>
+    </div>
+  {{ else }}
+    <h2 style="margin-top: 2rem;">📚 Blog Posts</h2>
+    <ul class="section-posts">
+      {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}" class="home-button">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+
+    {{ if and (eq .Section "iac") (ne .Title "IaC (Azure + Terraform)") }}
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="/iac/" class="home-button">📦 Return to Infra World</a>
+      </div>
+    {{ end }}
+  {{ end }}
+
+  <div style="text-align: center; margin-top: 2rem;">
+    <a href="/" class="home-button">🏠 Take Me Home</a>
+  </div>
+
+  {{ partial "comments.html" . }}
+</main>
+{{ end }}
+
