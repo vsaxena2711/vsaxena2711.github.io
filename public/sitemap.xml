@@ -15,6 +15,10 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/iac/code-in-action/</loc>
+  </url><url>
+    <loc>http://localhost:1313/iac/concepts/</loc>
+  </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
     <loc>http://localhost:1313/iac/</loc>
