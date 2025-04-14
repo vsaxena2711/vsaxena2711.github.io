@@ -48,7 +48,31 @@
 <main class="main">
   <h1>Concepts &amp; Insights</h1>
   <p><p>Welcome to the <strong>Concepts &amp; Insights</strong> zone 🧠<br>
-Here you&rsquo;ll find explanations, design patterns, and architecture-level breakdowns for Infrastructure as Code in Azure using Terraform.</p>
+Here you&rsquo;ll find explanations, design patterns, and architecture-level breakdowns for Infrastructure as Code in Azure using Terraform.
+{{ define &ldquo;main&rdquo; }}</p>
+<!-- raw HTML omitted -->
+<p>{{ if eq .Title &ldquo;IaC (Azure + Terraform)&rdquo; }}
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->📚 Concepts &amp; Insights<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->💻 Code in Action<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+{{ else }}
+<!-- raw HTML omitted -->📚 Blog Posts<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+{{ range .Pages }}
+<!-- raw HTML omitted --><!-- raw HTML omitted -->{{ .Title }}<!-- raw HTML omitted --><!-- raw HTML omitted -->
+{{ end }}
+<!-- raw HTML omitted --></p>
+<pre><code>{{ if and (eq .Section &quot;iac&quot;) (ne .Title &quot;IaC (Azure + Terraform)&quot;) }}
+  &lt;div style=&quot;text-align: center; margin-top: 2rem;&quot;&gt;
+    &lt;a href=&quot;/iac/&quot; class=&quot;home-button&quot;&gt;📦 Return to Infra World&lt;/a&gt;
+  &lt;/div&gt;
+{{ end }}
+</code></pre>
+<p>{{ end }}</p>
+<!-- raw HTML omitted -->
+<p>{{ partial &ldquo;comments.html&rdquo; . }}</p>
+<!-- raw HTML omitted -->
 </p>
 
   
