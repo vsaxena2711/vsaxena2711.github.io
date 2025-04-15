@@ -1,4 +1,4 @@
-baseURL = "https://vsaxena2711.github.io/"
+baseURL = "https://ainframinds.com/"
 languageCode = "en-us"
 title = "AInfraMinds"
 theme = "PaperMod"
@@ -33,3 +33,10 @@ mainSections = []
     name = "Contact"
     url = "/contact/"
     weight = 4
+  
+enableRobotsTXT = true
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+

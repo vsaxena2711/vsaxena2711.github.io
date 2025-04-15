@@ -1,5 +1,7 @@
 ---
 title: "Introduction to Terraform"
+description: "A beginner-friendly introduction to Terraform for Azure, including real-world analogies and code samples."
+keywords: ["terraform", "azure", "infrastructure as code", "devops"]
 date: 2025-04-10
 draft: false
 ---

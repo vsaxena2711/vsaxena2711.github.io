@@ -1,54 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Home on AInfraMinds</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Home on AInfraMinds</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Install Terragrunt</title>
-      <link>http://localhost:1313/iac/concepts/install-terragrunt/</link>
-      <pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/iac/concepts/install-terragrunt/</guid>
-      <description>&lt;h2 id=&#34;-how-to-install-terragrunt&#34;&gt;🛠️ How to Install Terragrunt&lt;/h2&gt;&#xA;&lt;p&gt;Terragrunt is a thin wrapper around Terraform that provides extra tools for managing configurations, remote backends, dependencies, and DRY (Don&amp;rsquo;t Repeat Yourself) practices.&lt;/p&gt;&#xA;&lt;p&gt;Let’s walk through the steps to install it.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-step-by-step-installing-terragrunt&#34;&gt;🧑‍💻 Step-by-Step: Installing Terragrunt&lt;/h2&gt;&#xA;&lt;h3 id=&#34;-prerequisites&#34;&gt;✅ Prerequisites&lt;/h3&gt;&#xA;&lt;p&gt;Make sure &lt;strong&gt;Terraform&lt;/strong&gt; is already installed on your system.&lt;br&gt;&#xA;If not, check out: &lt;a href=&#34;http://localhost:1313/iac/concepts/download-and-install-terraform-azurecli&#34;&gt;🧱 Install Terraform &amp;amp; Azure CLI&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-for-windows&#34;&gt;🪟 For Windows&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Download the latest Terragrunt &lt;code&gt;.exe&lt;/code&gt;:&lt;/strong&gt;&lt;br&gt;&#xA;Visit the &lt;a href=&#34;https://github.com/gruntwork-io/terragrunt/releases&#34;&gt;Terragrunt releases page&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Introduction to Terragrunt</title>
-      <link>http://localhost:1313/iac/concepts/introduction-to-terragrunt/</link>
-      <pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/iac/concepts/introduction-to-terragrunt/</guid>
-      <description>&lt;h2 id=&#34;introduction-to-terragrunt&#34;&gt;Introduction to Terragrunt&lt;/h2&gt;&#xA;&lt;p&gt;Terragrunt is a thin wrapper around Terraform that helps manage complex Infrastructure as Code (IaC) setups by providing powerful tools for automation, DRY (Don&amp;rsquo;t Repeat Yourself) configuration, and environment-level orchestration.&lt;/p&gt;&#xA;&lt;p&gt;If Terraform is your toolbox for provisioning infrastructure, then Terragrunt is the engineer who carries that toolbox from one environment to another, making sure all your tools are configured correctly and reused effectively.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;real-world-analogy-&#34;&gt;Real-World Analogy 🏗️🔁&lt;/h2&gt;&#xA;&lt;p&gt;🧰 &lt;strong&gt;Terraform&lt;/strong&gt; is like a set of high-quality tools: a hammer, a drill, a tape measure, and so on. Each tool does a job, and you use them to build your cloud infrastructure.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Download and Install Terraform and Azure CLI</title>
-      <link>http://localhost:1313/iac/concepts/download-and-install/</link>
-      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/iac/concepts/download-and-install/</guid>
-      <description>&lt;h2 id=&#34;-download-and-install-terraform--azure-cli&#34;&gt;🛠️ Download and Install Terraform &amp;amp; Azure CLI&lt;/h2&gt;&#xA;&lt;p&gt;Before diving into Infrastructure as Code, let’s set up the two most important tools you’ll need: &lt;strong&gt;Terraform&lt;/strong&gt; and &lt;strong&gt;Azure CLI&lt;/strong&gt;. These tools let you define, test, and manage your Azure resources directly from your machine.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-install-terraform&#34;&gt;1️⃣ Install Terraform&lt;/h2&gt;&#xA;&lt;p&gt;Terraform is distributed as a single binary. Here&amp;rsquo;s how to install it on different platforms:&lt;/p&gt;&#xA;&lt;h3 id=&#34;-windows&#34;&gt;🔵 Windows&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Visit the official download page:&lt;br&gt;&#xA;👉 &lt;a href=&#34;https://developer.hashicorp.com/terraform/downloads&#34;&gt;https://developer.hashicorp.com/terraform/downloads&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Download the &lt;strong&gt;Windows (amd64)&lt;/strong&gt; zip file.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Introduction to Terraform</title>
-      <link>http://localhost:1313/iac/concepts/introduction-to-terraform/</link>
-      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/iac/concepts/introduction-to-terraform/</guid>
-      <description>&lt;h2 id=&#34;introduction-to-terraform&#34;&gt;Introduction to Terraform&lt;/h2&gt;&#xA;&lt;p&gt;Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp. It enables users to define and provision infrastructure resources across cloud providers using a declarative configuration language called HCL (HashiCorp Configuration Language).&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-terraform&#34;&gt;What is Terraform?&lt;/h2&gt;&#xA;&lt;p&gt;Think of Terraform like a blueprint for your infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;🏗️ &lt;strong&gt;Real-world analogy&lt;/strong&gt;: Imagine you&amp;rsquo;re building a house. You don&amp;rsquo;t start by randomly placing bricks. Instead, you start with an architectural plan. That plan details how many rooms, where the doors and windows go, what the plumbing layout looks like, and so on. Similarly, Terraform lets you define the “plan” of your cloud infrastructure — virtual machines, networks, databases — all written in code.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Get in Touch</title>
-      <link>http://localhost:1313/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
-      <description></description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on AInfraMinds</title><link>https://ainframinds.com/</link><description>Recent content in Home on AInfraMinds</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 13 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://ainframinds.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Terragrunt</title><link>https://ainframinds.com/iac/concepts/install-terragrunt/</link><pubDate>Sun, 13 Apr 2025 00:00:00 +0000</pubDate><guid>https://ainframinds.com/iac/concepts/install-terragrunt/</guid><description>&lt;h2 id="-how-to-install-terragrunt">🛠️ How to Install Terragrunt&lt;/h2>
+&lt;p>Terragrunt is a thin wrapper around Terraform that provides extra tools for managing configurations, remote backends, dependencies, and DRY (Don&amp;rsquo;t Repeat Yourself) practices.&lt;/p>
+&lt;p>Let’s walk through the steps to install it.&lt;/p>
+&lt;hr>
+&lt;h2 id="-step-by-step-installing-terragrunt">🧑‍💻 Step-by-Step: Installing Terragrunt&lt;/h2>
+&lt;h3 id="-prerequisites">✅ Prerequisites&lt;/h3>
+&lt;p>Make sure &lt;strong>Terraform&lt;/strong> is already installed on your system.&lt;br>
+If not, check out: &lt;a href="https://ainframinds.com/iac/concepts/download-and-install-terraform-azurecli">🧱 Install Terraform &amp;amp; Azure CLI&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h3 id="-for-windows">🪟 For Windows&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Download the latest Terragrunt &lt;code>.exe&lt;/code>:&lt;/strong>&lt;br>
+Visit the &lt;a href="https://github.com/gruntwork-io/terragrunt/releases">Terragrunt releases page&lt;/a>.&lt;/p></description></item><item><title>Introduction to Terragrunt</title><link>https://ainframinds.com/iac/concepts/introduction-to-terragrunt/</link><pubDate>Sat, 12 Apr 2025 00:00:00 +0000</pubDate><guid>https://ainframinds.com/iac/concepts/introduction-to-terragrunt/</guid><description>&lt;h2 id="introduction-to-terragrunt">Introduction to Terragrunt&lt;/h2>
+&lt;p>Terragrunt is a thin wrapper around Terraform that helps manage complex Infrastructure as Code (IaC) setups by providing powerful tools for automation, DRY (Don&amp;rsquo;t Repeat Yourself) configuration, and environment-level orchestration.&lt;/p>
+&lt;p>If Terraform is your toolbox for provisioning infrastructure, then Terragrunt is the engineer who carries that toolbox from one environment to another, making sure all your tools are configured correctly and reused effectively.&lt;/p>
+&lt;hr>
+&lt;h2 id="real-world-analogy-">Real-World Analogy 🏗️🔁&lt;/h2>
+&lt;p>🧰 &lt;strong>Terraform&lt;/strong> is like a set of high-quality tools: a hammer, a drill, a tape measure, and so on. Each tool does a job, and you use them to build your cloud infrastructure.&lt;/p></description></item><item><title>Download and Install Terraform and Azure CLI</title><link>https://ainframinds.com/iac/concepts/download-and-install/</link><pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate><guid>https://ainframinds.com/iac/concepts/download-and-install/</guid><description>&lt;h2 id="-download-and-install-terraform--azure-cli">🛠️ Download and Install Terraform &amp;amp; Azure CLI&lt;/h2>
+&lt;p>Before diving into Infrastructure as Code, let’s set up the two most important tools you’ll need: &lt;strong>Terraform&lt;/strong> and &lt;strong>Azure CLI&lt;/strong>. These tools let you define, test, and manage your Azure resources directly from your machine.&lt;/p>
+&lt;hr>
+&lt;h2 id="1-install-terraform">1️⃣ Install Terraform&lt;/h2>
+&lt;p>Terraform is distributed as a single binary. Here&amp;rsquo;s how to install it on different platforms:&lt;/p>
+&lt;h3 id="-windows">🔵 Windows&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Visit the official download page:&lt;br>
+👉 &lt;a href="https://developer.hashicorp.com/terraform/downloads">https://developer.hashicorp.com/terraform/downloads&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Download the &lt;strong>Windows (amd64)&lt;/strong> zip file.&lt;/p></description></item><item><title>Introduction to Terraform</title><link>https://ainframinds.com/iac/concepts/introduction-to-terraform/</link><pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate><guid>https://ainframinds.com/iac/concepts/introduction-to-terraform/</guid><description>&lt;h2 id="introduction-to-terraform">Introduction to Terraform&lt;/h2>
+&lt;p>Terraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp. It enables users to define and provision infrastructure resources across cloud providers using a declarative configuration language called HCL (HashiCorp Configuration Language).&lt;/p>
+&lt;hr>
+&lt;h2 id="what-is-terraform">What is Terraform?&lt;/h2>
+&lt;p>Think of Terraform like a blueprint for your infrastructure.&lt;/p>
+&lt;p>🏗️ &lt;strong>Real-world analogy&lt;/strong>: Imagine you&amp;rsquo;re building a house. You don&amp;rsquo;t start by randomly placing bricks. Instead, you start with an architectural plan. That plan details how many rooms, where the doors and windows go, what the plumbing layout looks like, and so on. Similarly, Terraform lets you define the “plan” of your cloud infrastructure — virtual machines, networks, databases — all written in code.&lt;/p></description></item><item><title>About Me</title><link>https://ainframinds.com/about/</link><pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate><guid>https://ainframinds.com/about/</guid><description/></item><item><title>Get in Touch</title><link>https://ainframinds.com/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ainframinds.com/contact/</guid><description/></item></channel></rss>

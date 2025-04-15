@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>(Not So) Artificial Intelligence on AInfraMinds</title>
-    <link>http://localhost:1313/ai/</link>
-    <description>Recent content in (Not So) Artificial Intelligence on AInfraMinds</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/ai/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>(Not So) Artificial Intelligence on AInfraMinds</title><link>https://ainframinds.com/ai/</link><description>Recent content in (Not So) Artificial Intelligence on AInfraMinds</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://ainframinds.com/ai/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

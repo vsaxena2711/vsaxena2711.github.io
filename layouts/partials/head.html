@@ -1,0 +1,31 @@
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}Azure, Terraform, AI, DevOps tips and tutorials.{{ end }}">
+<meta name="keywords" content="Azure, Terraform, IaC, DevOps, AI, Terragrunt, Azure CLI, Cloud Engineering">
+<meta name="author" content="Vaibhav Saxena">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Params.description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="article">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ .Params.description }}">
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ .Title }}",
+      "description": "{{ .Params.description }}",
+      "author": {
+        "@type": "Person",
+        "name": "Vaibhav Saxena"
+      },
+      "datePublished": "{{ .Date }}"
+    }
+    </script>
+    
