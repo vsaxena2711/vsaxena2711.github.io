@@ -1,17 +1,17 @@
 {{ define "main" }}
 <main class="main">
-    <p style="color: #6b7280; font-size: 0.9rem; margin-top: -0.5rem;">
-    🗓️ Published on {{ .Date.Format "January 2, 2006" }}
-  </p>
   {{ .Content }}
 
-  {{ if strings.HasPrefix .RelPermalink "/iac/concepts/" }}
-    <div style="text-align: center; margin-top: 2rem;">
-      <a href="/iac/concepts/" class="home-button">👉 Return to Infra Concepts & Insights</a>
-    </div>
-    <div style="text-align: center; margin-top: 1rem;">
-      <a href="/iac/" class="home-button">📦 Return to Infra World</a>
-      <a href="/" class="home-button">🏠 Take Me Home</a>
+  {{ if eq .Section "iac" }}
+    <div style="text-align: center; margin-top: 2.5rem;">
+      {{ if in .RelPermalink "/iac/concepts/" }}
+        <a href="/iac/concepts/" class="home-button">👉 Return to Infra Concepts & Insights</a>
+      {{ else if in .RelPermalink "/iac/code-in-action/" }}
+        <a href="/iac/code-in-action/" class="home-button">👉 Return to Code in Action</a>
+      {{ end }}
+      
+      <a href="/iac/" class="home-button" style="margin-left: 0.5rem;">📦 Return to Infra World</a>
+      <a href="/" class="home-button" style="margin-left: 0.5rem;">🏠 Take Me Home</a>
     </div>
   {{ end }}
 
