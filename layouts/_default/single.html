@@ -15,6 +15,18 @@
     </div>
   {{ end }}
 
+  {{ if and (eq .Section "ai") (in .Permalink "/ai/ai-nsteins-notebook/") }}
+  <div style="text-align: center; margin-top: 1rem;">
+    <a href="/ai/ai-nsteins-notebook/" class="home-button">👉 Return to AI-nstein's Notebook</a>
+  </div>
+  <div style="text-align: center; margin-top: 2rem;">
+    <a href="/ai/" class="home-button">📦 Return to AI World</a>
+  </div>
+  <div style="text-align: center; margin-top: 1rem;">
+    <a href="/" class="home-button">🏠 Take Me Home</a>
+  </div>
+{{ end }}
+
   {{ partial "comments.html" . }}
 </main>
 {{ end }}

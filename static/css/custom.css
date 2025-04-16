@@ -272,3 +272,21 @@ pre code {
   white-space: pre-wrap;
   word-break: break-word;
 }
+
+img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 45%;
+  height: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+
+
