@@ -19,7 +19,10 @@
     <h2 style="margin-top: 2rem;">📚 Blog Posts</h2>
     <ul class="section-posts">
       {{ range .Pages }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a><br />
+          <small class="post-date">📅 Published on {{ .Date.Format "Jan 2, 2006" }}</small>
+        </li>
       {{ end }}
     </ul>
 

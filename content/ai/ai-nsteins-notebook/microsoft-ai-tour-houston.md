@@ -1,6 +1,6 @@
 ---
 title: "🧠 Insights from Microsoft AI Tour – Houston"
-date: 2025-04-16
+date: 2025-03-22
 draft: false
 description: "Highlights and key takeaways from the Microsoft AI Tour held in Houston on March 19, 2025. Covering AI transformation, Copilot solutions, AI risks, and productivity strategies."
 tags: ["AI", "Microsoft AI Tour", "Azure AI", "Copilot", "Agentic AI"]

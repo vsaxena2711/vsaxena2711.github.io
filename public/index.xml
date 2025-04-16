@@ -6,15 +6,8 @@
     <description>Recent content in Home on AInfraMinds</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>🧠 Insights from Microsoft AI Tour – Houston</title>
-      <link>http://localhost:1313/ai/ai-nsteins-notebook/microsoft-ai-tour-houston/</link>
-      <pubDate>Wed, 16 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ai/ai-nsteins-notebook/microsoft-ai-tour-houston/</guid>
-      <description>&lt;h2 id=&#34;-my-day-at-microsoft-ai-tour--houston-march-19-2025&#34;&gt;🌟 My Day at Microsoft AI Tour – Houston (March 19, 2025)&lt;/h2&gt;&#xA;&lt;p&gt;On March 19, 2025, I had the chance to attend the Microsoft AI Tour in Houston — part of a global series taking place across 60+ cities. It was a day full of inspiring talks, live demos, hands-on booths, and deep discussions around &lt;strong&gt;Agentic AI&lt;/strong&gt;, &lt;strong&gt;Copilot&lt;/strong&gt;, &lt;strong&gt;AI transformation&lt;/strong&gt;, and more.&lt;/p&gt;&#xA;&lt;p&gt;Here are my personal takeaways and insights 👇&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-memorable-quotes-that-stuck-with-me&#34;&gt;💬 Memorable Quotes That Stuck With Me&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;💡 “For every $1 a company invests in Generative AI, the return on investment is 3.7x.”&lt;br&gt;&#xA;💡 “AI is not a tool for work; it&amp;rsquo;s a new dimension of work.”&lt;br&gt;&#xA;💡 “AI may be artificial, but it’s not intelligent unless you feed it the right data.”&lt;br&gt;&#xA;💡 “If your data isn’t up to date, AI won’t just make mistakes—it’ll make them with more confidence than anyone ever has.” ✅&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Deploy Azure VM using Terraform &amp; Terragrunt</title>
       <link>http://localhost:1313/iac/code-in-action/deploy-azure-vm-with-terragrunt/</link>
@@ -56,6 +49,13 @@
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>🧠 Insights from Microsoft AI Tour – Houston</title>
+      <link>http://localhost:1313/ai/ai-nsteins-notebook/microsoft-ai-tour-houston/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ai/ai-nsteins-notebook/microsoft-ai-tour-houston/</guid>
+      <description>&lt;h2 id=&#34;-my-day-at-microsoft-ai-tour--houston-march-19-2025&#34;&gt;🌟 My Day at Microsoft AI Tour – Houston (March 19, 2025)&lt;/h2&gt;&#xA;&lt;p&gt;On March 19, 2025, I had the chance to attend the Microsoft AI Tour in Houston — part of a global series taking place across 60+ cities. It was a day full of inspiring talks, live demos, hands-on booths, and deep discussions around &lt;strong&gt;Agentic AI&lt;/strong&gt;, &lt;strong&gt;Copilot&lt;/strong&gt;, &lt;strong&gt;AI transformation&lt;/strong&gt;, and more.&lt;/p&gt;&#xA;&lt;p&gt;Here are my personal takeaways and insights 👇&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-memorable-quotes-that-stuck-with-me&#34;&gt;💬 Memorable Quotes That Stuck With Me&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;💡 “For every $1 a company invests in Generative AI, the return on investment is 3.7x.”&lt;br&gt;&#xA;💡 “AI is not a tool for work; it&amp;rsquo;s a new dimension of work.”&lt;br&gt;&#xA;💡 “AI may be artificial, but it’s not intelligent unless you feed it the right data.”&lt;br&gt;&#xA;💡 “If your data isn’t up to date, AI won’t just make mistakes—it’ll make them with more confidence than anyone ever has.” ✅&lt;/p&gt;</description>
     </item>
     <item>
       <title>Get in Touch</title>
