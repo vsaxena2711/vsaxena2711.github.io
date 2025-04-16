@@ -3,22 +3,35 @@
   <h1>{{ .Title }}</h1>
   <p>{{ .Content }}</p>
 
-  {{ if eq .Title "IaC (Azure + Terraform)" }}
+  {{ if eq .Title "(Not So) Artificial Intelligence" }}
+    <div class="homepage-links" style="margin-top: 2rem;">
+      <a class="button" href="/ai/ai-nsteins-notebook/">🧠 AI-nstein's Notebook</a>
+      <a class="button" href="/ai/synth-minds-in-action/">🤖 Synth Minds in Action</a>
+    </div>
+
+  {{ else if eq .Title "IaC (Azure + Terraform)" }}
     <div class="homepage-links" style="margin-top: 2rem;">
       <a class="button" href="/iac/concepts/">📚 Concepts & Insights</a>
       <a class="button" href="/iac/code-in-action/">💻 Code in Action</a>
     </div>
+
   {{ else }}
     <h2 style="margin-top: 2rem;">📚 Blog Posts</h2>
     <ul class="section-posts">
       {{ range .Pages }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
       {{ end }}
     </ul>
 
     {{ if and (eq .Section "iac") (ne .Title "IaC (Azure + Terraform)") }}
       <div style="text-align: center; margin-top: 2rem;">
         <a href="/iac/" class="home-button">📦 Return to Infra World</a>
+      </div>
+    {{ end }}
+
+    {{ if and (eq .Section "ai") (ne .Title "(Not So) Artificial Intelligence") }}
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="/ai/" class="home-button">📦 Return to AI World</a>
       </div>
     {{ end }}
   {{ end }}
