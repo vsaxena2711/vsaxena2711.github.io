@@ -289,4 +289,9 @@ img:hover {
 }
 
 
+.section-posts .post-date {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-left: 0.5rem;
+}
 
