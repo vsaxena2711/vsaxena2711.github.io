@@ -15,14 +15,16 @@
     </div>
   {{ end }}
 
-  {{ if and (eq .Section "ai") (in .Permalink "/ai/ai-nsteins-notebook/") }}
-  <div style="text-align: center; margin-top: 1rem;">
-    <a href="/ai/ai-nsteins-notebook/" class="home-button">👉 Return to AI-nstein's Notebook</a>
-  </div>
+  {{ if and (eq .Section "ai") (in .File.Path "synth-minds-in-action") }}
   <div style="text-align: center; margin-top: 2rem;">
-    <a href="/ai/" class="home-button">📦 Return to AI World</a>
+    <a href="/ai/synth-minds-in-action/" class="home-button">👉 Return to Synth Minds in Action</a><br><br>
+    <a href="/ai/" class="home-button">📦 Return to AI World</a><br><br>
+    <a href="/" class="home-button">🏠 Take Me Home</a>
   </div>
-  <div style="text-align: center; margin-top: 1rem;">
+{{ else if and (eq .Section "ai") (in .File.Path "ai-nsteins-notebook") }}
+  <div style="text-align: center; margin-top: 2rem;">
+    <a href="/ai/ai-nsteins-notebook/" class="home-button">👉 Return to AI-nstein's Notebook</a><br><br>
+    <a href="/ai/" class="home-button">📦 Return to AI World</a><br><br>
     <a href="/" class="home-button">🏠 Take Me Home</a>
   </div>
 {{ end }}

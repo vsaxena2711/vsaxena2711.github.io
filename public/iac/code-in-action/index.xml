@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code in Action on AInfraMinds</title>
-    <link>http://localhost:62691/iac/code-in-action/</link>
+    <link>http://localhost:1313/iac/code-in-action/</link>
     <description>Recent content in Code in Action on AInfraMinds</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:62691/iac/code-in-action/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/iac/code-in-action/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploy Azure VM using Terraform &amp; Terragrunt</title>
-      <link>http://localhost:62691/iac/code-in-action/deploy-azure-vm-with-terragrunt/</link>
+      <link>http://localhost:1313/iac/code-in-action/deploy-azure-vm-with-terragrunt/</link>
       <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62691/iac/code-in-action/deploy-azure-vm-with-terragrunt/</guid>
+      <guid>http://localhost:1313/iac/code-in-action/deploy-azure-vm-with-terragrunt/</guid>
       <description>&lt;h2 id=&#34;-introduction&#34;&gt;🚀 Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In this post, we’ll walk through a practical example of deploying an Azure &lt;strong&gt;Virtual Machine&lt;/strong&gt; using a &lt;strong&gt;reusable Terraform module&lt;/strong&gt;, and orchestrating the inputs with &lt;strong&gt;Terragrunt&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Whether you&amp;rsquo;re spinning up a dev VM or preparing infrastructure for your next project, this setup is flexible, scalable, and clean — ideal for managing multiple environments with minimal duplication.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-code-repository&#34;&gt;🔗 Code Repository&lt;/h2&gt;&#xA;&lt;p&gt;All source code is hosted publicly on GitHub:&lt;br&gt;&#xA;📁 &lt;strong&gt;Terraform Module&lt;/strong&gt;: &lt;a href=&#34;https://github.com/vsaxena2711/tf-brickstack/tree/main/azure-vm-module&#34;&gt;&lt;code&gt;tf-brickstack/azure-vm-module&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

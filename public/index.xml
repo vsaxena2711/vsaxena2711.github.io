@@ -6,8 +6,15 @@
     <description>Recent content in Home on AInfraMinds</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create Your Own: Custom Question Answering with Azure AI Services</title>
+      <link>http://localhost:1313/ai/synth-minds-in-action/custom-qa-bot/</link>
+      <pubDate>Thu, 17 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ai/synth-minds-in-action/custom-qa-bot/</guid>
+      <description>&lt;h2 id=&#34;-what-is-custom-question-answering&#34;&gt;🧠 What is Custom Question Answering?&lt;/h2&gt;&#xA;&lt;p&gt;Custom Question Answering (CQA) is a feature under &lt;strong&gt;Azure AI Language Service&lt;/strong&gt; that allows you to build a knowledge-based Q&amp;amp;A system. Instead of writing code or training ML models, you simply provide documents or URLs — Azure does the rest.&lt;/p&gt;&#xA;&lt;p&gt;Think of it like building your own version of ChatGPT — but trained on your company&amp;rsquo;s internal documents, policies, FAQs, or even PDFs.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-what-youll-build&#34;&gt;📦 What You’ll Build&lt;/h2&gt;&#xA;&lt;p&gt;A simple Question Answering model that:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Deploy Azure VM using Terraform &amp; Terragrunt</title>
       <link>http://localhost:1313/iac/code-in-action/deploy-azure-vm-with-terragrunt/</link>
