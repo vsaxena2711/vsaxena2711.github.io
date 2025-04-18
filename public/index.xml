@@ -6,8 +6,15 @@
     <description>Recent content in Home on AInfraMinds</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create an Azure Key Vault (RBAC-based) using Terraform &amp; Terragrunt</title>
+      <link>http://localhost:1313/iac/code-in-action/azure-keyvault-rbac-module/</link>
+      <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/iac/code-in-action/azure-keyvault-rbac-module/</guid>
+      <description>&lt;h2 id=&#34;-overview&#34;&gt;🔐 Overview&lt;/h2&gt;&#xA;&lt;p&gt;In this guide, we’ll build a verbose and reusable &lt;strong&gt;Terraform module&lt;/strong&gt; for provisioning an &lt;strong&gt;Azure Key Vault&lt;/strong&gt; using &lt;strong&gt;RBAC-based access control&lt;/strong&gt; — the recommended model by Microsoft.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ll also show how to call the module from a &lt;strong&gt;Terragrunt&lt;/strong&gt; config file, keeping inputs clean and environment-friendly.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-access-policy-vs-rbac-model&#34;&gt;🤔 Access Policy vs. RBAC Model&lt;/h2&gt;&#xA;&lt;p&gt;Azure Key Vault supports two access models:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Model&lt;/th&gt;&#xA;          &lt;th&gt;Description&lt;/th&gt;&#xA;          &lt;th&gt;Recommended?&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Access Policy&lt;/td&gt;&#xA;          &lt;td&gt;Classic model where you explicitly define what each principal can do&lt;/td&gt;&#xA;          &lt;td&gt;❌ Legacy&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;RBAC&lt;/td&gt;&#xA;          &lt;td&gt;Uses Azure’s Role-Based Access Control via Azure AD&lt;/td&gt;&#xA;          &lt;td&gt;✅ Yes!&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Microsoft recommends using &lt;strong&gt;RBAC-based authorization&lt;/strong&gt; for improved security, flexibility, and centralized role management.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Create Your Own: Custom Question Answering with Azure AI Services</title>
       <link>http://localhost:1313/ai/synth-minds-in-action/custom-qa-bot/</link>
@@ -56,6 +63,13 @@
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Is CAPTCHA Still Human-Proof? A Turing Test in the Age of Generative AI</title>
+      <link>http://localhost:1313/ai/ai-nsteins-notebook/is-captcha-still-human-proof/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ai/ai-nsteins-notebook/is-captcha-still-human-proof/</guid>
+      <description>&lt;h2 id=&#34;-a-brief-history-of-captcha&#34;&gt;🤖 A Brief History of CAPTCHA&lt;/h2&gt;&#xA;&lt;p&gt;CAPTCHA — short for &lt;strong&gt;Completely Automated Public Turing test to tell Computers and Humans Apart&lt;/strong&gt; — was introduced in &lt;strong&gt;2003&lt;/strong&gt; by &lt;strong&gt;Luis von Ahn&lt;/strong&gt;, &lt;strong&gt;Manuel Blum&lt;/strong&gt;, &lt;strong&gt;Nicholas Hopper&lt;/strong&gt;, and &lt;strong&gt;John Langford&lt;/strong&gt; at &lt;strong&gt;Carnegie Mellon University&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Its purpose?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;To distinguish humans from bots using tasks that were easy for humans but hard for machines.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;At the time, automated bots were wreaking havoc:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Flooding comment sections with spam&lt;/li&gt;&#xA;&lt;li&gt;Creating fake accounts&lt;/li&gt;&#xA;&lt;li&gt;Harvesting emails for phishing&lt;/li&gt;&#xA;&lt;li&gt;Skewing online polls&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The original CAPTCHA showed &lt;strong&gt;warped letters and numbers&lt;/strong&gt; in distorted images — something even early OCR (Optical Character Recognition) systems couldn’t read. It was rooted in the idea of a &lt;strong&gt;Turing Test&lt;/strong&gt; — proving you&amp;rsquo;re human by solving what machines couldn’t.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🧠 Insights from Microsoft AI Tour – Houston</title>
