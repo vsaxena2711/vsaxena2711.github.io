@@ -6,8 +6,15 @@
     <description>Recent content in Home on AInfraMinds</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📘 Notes from My AI-900 Journey: Azure AI Fundamentals</title>
+      <link>http://localhost:1313/ai/ai-nsteins-notebook/ai-900-notes/</link>
+      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ai/ai-nsteins-notebook/ai-900-notes/</guid>
+      <description>&lt;h2 id=&#34;-i-passed-the-ai-900-exam&#34;&gt;🚀 I Passed the AI-900 Exam!&lt;/h2&gt;&#xA;&lt;p&gt;I’m excited to share that I cleared the &lt;strong&gt;AI-900: Microsoft Azure AI Fundamentals&lt;/strong&gt; exam! 🎉&lt;br&gt;&#xA;While preparing, I created a set of personal notes — and I’m sharing them here in the hope that they’ll help others on the same path.&lt;/p&gt;&#xA;&lt;p&gt;These notes aren’t a complete study guide, but they &lt;em&gt;are&lt;/em&gt; great for quick reference, revision, and understanding the core concepts you’ll need to know for the exam.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Create an Azure Key Vault (RBAC-based) using Terraform &amp; Terragrunt</title>
       <link>http://localhost:1313/iac/code-in-action/azure-keyvault-rbac-module/</link>
