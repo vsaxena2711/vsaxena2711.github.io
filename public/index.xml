@@ -6,15 +6,8 @@
     <description>Recent content in Home on AInfraMinds</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>📘 Notes from My AI-900 Journey: Azure AI Fundamentals</title>
-      <link>http://localhost:1313/ai/ai-nsteins-notebook/ai-900-notes/</link>
-      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ai/ai-nsteins-notebook/ai-900-notes/</guid>
-      <description>&lt;h2 id=&#34;-i-passed-the-ai-900-exam&#34;&gt;🚀 I Passed the AI-900 Exam!&lt;/h2&gt;&#xA;&lt;p&gt;I’m excited to share that I cleared the &lt;strong&gt;AI-900: Microsoft Azure AI Fundamentals&lt;/strong&gt; exam! 🎉&lt;br&gt;&#xA;While preparing, I created a set of personal notes — and I’m sharing them here in the hope that they’ll help others on the same path.&lt;/p&gt;&#xA;&lt;p&gt;These notes aren’t a complete study guide, but they &lt;em&gt;are&lt;/em&gt; great for quick reference, revision, and understanding the core concepts you’ll need to know for the exam.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Create an Azure Key Vault (RBAC-based) using Terraform &amp; Terragrunt</title>
       <link>http://localhost:1313/iac/code-in-action/azure-keyvault-rbac-module/</link>
@@ -84,6 +77,13 @@
       <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/ai/ai-nsteins-notebook/microsoft-ai-tour-houston/</guid>
       <description>&lt;h2 id=&#34;-my-day-at-microsoft-ai-tour--houston-march-19-2025&#34;&gt;🌟 My Day at Microsoft AI Tour – Houston (March 19, 2025)&lt;/h2&gt;&#xA;&lt;p&gt;On March 19, 2025, I had the chance to attend the Microsoft AI Tour in Houston — part of a global series taking place across 60+ cities. It was a day full of inspiring talks, live demos, hands-on booths, and deep discussions around &lt;strong&gt;Agentic AI&lt;/strong&gt;, &lt;strong&gt;Copilot&lt;/strong&gt;, &lt;strong&gt;AI transformation&lt;/strong&gt;, and more.&lt;/p&gt;&#xA;&lt;p&gt;Here are my personal takeaways and insights 👇&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-memorable-quotes-that-stuck-with-me&#34;&gt;💬 Memorable Quotes That Stuck With Me&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;💡 “For every $1 a company invests in Generative AI, the return on investment is 3.7x.”&lt;br&gt;&#xA;💡 “AI is not a tool for work; it&amp;rsquo;s a new dimension of work.”&lt;br&gt;&#xA;💡 “AI may be artificial, but it’s not intelligent unless you feed it the right data.”&lt;br&gt;&#xA;💡 “If your data isn’t up to date, AI won’t just make mistakes—it’ll make them with more confidence than anyone ever has.” ✅&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📘 Notes from My AI-900 Journey: Azure AI Fundamentals</title>
+      <link>http://localhost:1313/ai/ai-nsteins-notebook/ai-900-notes/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ai/ai-nsteins-notebook/ai-900-notes/</guid>
+      <description>&lt;h2 id=&#34;-i-passed-the-ai-900-exam&#34;&gt;🚀 I Passed the AI-900 Exam!&lt;/h2&gt;&#xA;&lt;p&gt;I’m excited to share that I cleared the &lt;strong&gt;AI-900: Microsoft Azure AI Fundamentals&lt;/strong&gt; exam! 🎉&lt;br&gt;&#xA;While preparing, I created a set of personal notes — and I’m sharing them here in the hope that they’ll help others on the same path.&lt;/p&gt;&#xA;&lt;p&gt;These notes aren’t a complete study guide, but they &lt;em&gt;are&lt;/em&gt; great for quick reference, revision, and understanding the core concepts you’ll need to know for the exam.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Get in Touch</title>

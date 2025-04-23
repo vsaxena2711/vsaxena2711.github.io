@@ -1,6 +1,6 @@
 ---
 title: "📘 Notes from My AI-900 Journey: Azure AI Fundamentals"
-date: 2025-04-22
+date: 2025-03-01
 draft: false
 ---
 
