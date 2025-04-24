@@ -65,13 +65,6 @@
       <description></description>
     </item>
     <item>
-      <title>Is CAPTCHA Still Human-Proof? A Turing Test in the Age of Generative AI</title>
-      <link>http://localhost:1313/ai/ai-nsteins-notebook/is-captcha-still-human-proof/</link>
-      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ai/ai-nsteins-notebook/is-captcha-still-human-proof/</guid>
-      <description>&lt;h2 id=&#34;-a-brief-history-of-captcha&#34;&gt;🤖 A Brief History of CAPTCHA&lt;/h2&gt;&#xA;&lt;p&gt;CAPTCHA — short for &lt;strong&gt;Completely Automated Public Turing test to tell Computers and Humans Apart&lt;/strong&gt; — was introduced in &lt;strong&gt;2003&lt;/strong&gt; by &lt;strong&gt;Luis von Ahn&lt;/strong&gt;, &lt;strong&gt;Manuel Blum&lt;/strong&gt;, &lt;strong&gt;Nicholas Hopper&lt;/strong&gt;, and &lt;strong&gt;John Langford&lt;/strong&gt; at &lt;strong&gt;Carnegie Mellon University&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Its purpose?&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;To distinguish humans from bots using tasks that were easy for humans but hard for machines.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;At the time, automated bots were wreaking havoc:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Flooding comment sections with spam&lt;/li&gt;&#xA;&lt;li&gt;Creating fake accounts&lt;/li&gt;&#xA;&lt;li&gt;Harvesting emails for phishing&lt;/li&gt;&#xA;&lt;li&gt;Skewing online polls&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The original CAPTCHA showed &lt;strong&gt;warped letters and numbers&lt;/strong&gt; in distorted images — something even early OCR (Optical Character Recognition) systems couldn’t read. It was rooted in the idea of a &lt;strong&gt;Turing Test&lt;/strong&gt; — proving you&amp;rsquo;re human by solving what machines couldn’t.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>🧠 Insights from Microsoft AI Tour – Houston</title>
       <link>http://localhost:1313/ai/ai-nsteins-notebook/microsoft-ai-tour-houston/</link>
       <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
