@@ -100,7 +100,7 @@ Some models are built for specific regions or industries:
 
 Regardless of the type, all models in the catalog follow enterprise-ready standards for **data privacy**, **security**, and **responsible AI**.
 
-## 🚀 Can Your Solution Scale?
+### 🚀 Can Your Solution Scale?
 
 Once you’ve built a prototype, you need to plan for real-world workloads:
 - **Where to deploy the model?**
@@ -109,11 +109,11 @@ Once you’ve built a prototype, you need to plan for real-world workloads:
 
 Consider the full **GenAIOps lifecycle** for long-term success.
 
-## 🎯 Prompt Engineering: Optimizing Model Responses
+### 🎯 Prompt Engineering: Optimizing Model Responses
 
 Crafting the right question is everything. Here's how to optimize prompts:
 
-### 🛠️ Prompt Patterns
+#### 🛠️ Prompt Patterns
 
 - **Act as a Persona**: "You are a financial advisor..."
 - **Suggest Better Questions**: Ask the model to refine your query.
@@ -127,10 +127,58 @@ Crafting the right question is everything. Here's how to optimize prompts:
 - **Fine-Tuning**: Customize a foundation model with example Q&A pairs.
 
 ---
+## 🔍 Module 3: What is Azure AI Foundry SDK?
+
+The **Azure AI Foundry SDK** is a powerful toolkit for developers to create applications using models and services defined within an Azure AI Foundry project. It supports Python and .NET, offering seamless integration to build generative AI applications.
+
+### 📦 Install the SDK
+
+To use the SDK in Python, install the core package:
+
+```bash
+pip install azure-ai-projects
+```
+### 🔗 Accessing Project Connections
+
+Every **Azure AI Foundry project** includes connected resources—such as **Azure AI services**, **Storage**, and **AI Search**—which are accessible using the `AIProjectClient` class in Python.
+
+You can use the following methods from the `connections` property:
+
+- `connections.list()`  
+  *Lists all resource connections.*
+
+- `connections.get(name, include_credentials=True)`  
+  *Retrieves a specific connection, optionally including credentials.*
+
+- `connections.get_default(connection_type, include_credentials=True)`  
+  *Fetches the default connection of a specific type (e.g., Azure AI Service).*
+
+### 💬 Creating a Chat Client
+
+A common use case is building **chat applications** using **generative AI models**. The Azure AI Foundry SDK supports multiple model hosting options:
+
+- **Azure AI model inference** – A shared endpoint that hosts multiple models.
+- **Azure OpenAI service** – A dedicated endpoint for OpenAI models hosted in Azure.
+- **Serverless API** – Each model is exposed via a unique serverless endpoint.
+- **Managed compute** – Models hosted on custom infrastructure with unique endpoints.
+
+
+### 🧑‍💻 Build Apps Using Different Deployment Types
+
+#### ✅ Azure AI Model Inference
+
+Use the `ChatCompletionsClient` class from the SDK to chat with deployed models.  
+A key advantage of this approach is **easy model switching**—just update the model deployment name in your code to test against different models.
+
+#### ✅ Azure OpenAI Service
+
+Use the method `AIProjectClient.get_azure_openai_client()` to connect to the **Azure OpenAI service** resource in your project.  
+This returns an **OpenAI client**, which you can use to seamlessly interact with models deployed to the Azure OpenAI service.
 
 ---
 ## 📚 References
 
 - [Plan and prepare to develop AI solutions on Azure](https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/?ref=collection&listId=60yka7t2o8od52&sharingId=6A9F03F25E12DA9E&wt.mc_id=aiskillsfest_msftlearn_training_wwl_challenge_tech)  
 - [Choose and deploy models from the model catalog in Azure AI Foundry portal](https://learn.microsoft.com/en-us/training/modules/explore-models-azure-ai-studio/?ref=collection&listId=60yka7t2o8od52&sharingId=6A9F03F25E12DA9E&wt.mc_id=aiskillsfest_msftlearn_training_wwl_challenge_tech)
+- [Develop an AI app with the Azure AI Foundry SDK](https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
 
