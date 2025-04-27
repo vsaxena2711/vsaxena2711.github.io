@@ -176,9 +176,141 @@ Use the method `AIProjectClient.get_azure_openai_client()` to connect to the **A
 This returns an **OpenAI client**, which you can use to seamlessly interact with models deployed to the Azure OpenAI service.
 
 ---
+
+## 🤔 What are AI Agents?
+
+**AI agents** are intelligent software services that combine **generative AI models**, **contextual data**, and **automation capabilities** to perform tasks based on user input and environmental factors.
+
+Example:  
+An AI agent could help employees manage expense claims by answering questions about corporate policy and automatically submitting recurring claims like monthly cellphone bills, or routing claims to appropriate approvers.
+
+---
+
+## 🛠️ Options for Building AI Agents
+
+Developers have several frameworks and SDKs available for creating AI agents:
+
+- **Azure AI Agent Service**  
+  Managed service based on OpenAI Assistants API, offering model choice, enterprise security, and deep integration with Azure AI Foundry.
+
+- **OpenAI Assistants API**  
+  Limited to OpenAI models, offering a smaller feature set compared to Azure AI Agent Service.
+
+- **Semantic Kernel**  
+  Open-source toolkit for building AI agents and orchestrating multi-agent workflows. Includes the Semantic Kernel Agent Framework for agent-specific solutions.
+
+- **AutoGen**  
+  Lightweight open-source framework ideal for rapid prototyping and research on agent development.
+
+- **Microsoft 365 Agents SDK**  
+  SDK to create agents that can be deployed across channels like Slack and Messenger, not limited to Microsoft 365 apps.
+
+- **Microsoft Copilot Studio**  
+  A low-code platform enabling "citizen developers" to quickly design and deploy agents using a visual interface integrated with Microsoft 365 or other channels.
+
+---
+## 🤖 Module 4 : Get Started with AI Agent Development on Azure
+### 🚀 Azure AI Agent Service Overview
+
+The **Azure AI Agent Service** (part of Azure AI Foundry) helps you **create, test, and manage AI agents** through:
+
+- A **visual experience** in the Azure AI Foundry portal.
+- A **code-first experience** using the Azure AI Foundry SDK.
+
+#### 🧩 Components of an Azure AI Agent
+
+- **Model**  
+  A deployed generative AI model (e.g., OpenAI models or those from the Azure AI Foundry catalog) that powers the agent's reasoning and response generation.
+
+- **Knowledge**  
+  Contextual data sources that ground agent responses, including:
+  - Bing search results
+  - Azure AI Search indexes
+  - Your custom documents and datasets
+
+- **Tools**  
+  Programmatic capabilities for task automation, such as:
+  - Built-in search tools (Bing, Azure AI Search)
+  - A code interpreter for Python execution
+  - Custom tools built using your code or Azure Functions
+
+---
+## 📚 Module 5 : Develop a RAG-Based Solution with Your Own Data Using Azure AI Foundry
+
+### 🚫 Ungrounded Prompts and Responses
+
+Language models generate answers based solely on their training data, which is often vast but **uncontextualized**.  
+This can lead to responses that sound logical but are inaccurate or even fictional.  
+Example: Asking "Which product should I use for X?" could result in details about a non-existent product.
+
+### 📌 Grounded Prompts and Responses
+
+By **grounding** prompts with **relevant, factual data**, you can guide the model to produce **accurate and contextualized** answers.  
+For example, grounding with a product catalog ensures the model recommends actual, available products.
+
+### 🧠 How to Ground Your Language Model
+
+Language models are great at generating natural text, but they often lack **specific domain knowledge**.  
+To improve accuracy, you can apply **Retrieval Augmented Generation (RAG)**, which involves:
+
+- Retrieving relevant data based on the user's prompt.
+- Augmenting the prompt with retrieved data.
+- Using a language model to generate the final response.
+
+#### 🗂️ Adding Grounding Data in Azure AI Foundry
+
+Azure AI Foundry allows you to upload your own data for grounding, connecting to:
+
+- **Azure Blob Storage**
+- **Azure Data Lake Storage Gen2**
+- **Microsoft OneLake**
+
+You can also upload files or folders directly into your AI Foundry project storage.
+
+### 🔍 Make Your Data Searchable
+
+For an agent to generate accurate answers, efficient searchability of your data is crucial.  
+Azure AI Foundry integrates with **Azure AI Search** for powerful retrieval capabilities.
+
+#### 🧮 Vector Indexing
+
+Instead of relying only on text-based search, you can use a **vector index**—embedding your data into floating-point vectors to capture semantic meaning.
+
+Example:  
+Texts like *"The children played joyfully in the park."* and *"Kids happily ran around the playground."* have different words but similar meaning—captured through vector embeddings.
+
+#### 🗃️ Creating a Search Index
+
+A **search index** organizes your content, similar to a library catalog.  
+It helps the search engine find relevant content quickly and efficiently.
+
+#### 🔎 Searching the Index
+
+You can query your index using:
+
+- **Keyword search** – Based on exact terms.
+- **Semantic search** – Based on meaning.
+- **Vector search** – Based on semantic similarity using embeddings.
+- **Hybrid search** – Combines multiple techniques for optimal results.
+
+### 🔄 Implement RAG in a Prompt Flow
+
+Once you upload your data and create an index, you can use **Prompt Flow** in Azure AI Foundry to orchestrate a **Retrieval Augmented Generation (RAG)** solution.
+
+#### ⚙️ Key Steps for RAG Implementation
+
+- Use a **sample** to create a chat flow.
+- **Modify** the query based on chat history.
+- **Look up** relevant information from your index.
+- **Generate** prompt context.
+- **Define** prompt variants for better interaction.
+- **Chat** with grounded context in responses.
+
+---
 ## 📚 References
 
 - [Plan and prepare to develop AI solutions on Azure](https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/?ref=collection&listId=60yka7t2o8od52&sharingId=6A9F03F25E12DA9E&wt.mc_id=aiskillsfest_msftlearn_training_wwl_challenge_tech)  
 - [Choose and deploy models from the model catalog in Azure AI Foundry portal](https://learn.microsoft.com/en-us/training/modules/explore-models-azure-ai-studio/?ref=collection&listId=60yka7t2o8od52&sharingId=6A9F03F25E12DA9E&wt.mc_id=aiskillsfest_msftlearn_training_wwl_challenge_tech)
 - [Develop an AI app with the Azure AI Foundry SDK](https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
-
+- [Get started with AI agent development on Azure](https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
+- [Develop a RAG-based solution with your own data using Azure AI Foundry](https://learn.microsoft.com/en-us/training/modules/build-copilot-ai-studio/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
