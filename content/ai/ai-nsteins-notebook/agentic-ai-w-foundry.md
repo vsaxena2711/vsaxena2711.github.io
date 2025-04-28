@@ -307,6 +307,63 @@ Once you upload your data and create an index, you can use **Prompt Flow** in Az
 - **Chat** with grounded context in responses.
 
 ---
+## 🔒 Module 6: Introduction to AI Agent Service Security Controls
+
+### 🧠 Understanding the Azure AI Agent Service
+
+The **Azure AI Agent Service** acts as a "smart" microservice to:
+
+- Answer questions (via Retrieval Augmented Generation - RAG),
+- Perform actions,
+- Automate workflows.
+
+It combines generative AI with tools that interact with real-world data.  
+Since the service is **fully managed by Microsoft**, you don't need to worry about scaling, security, or infrastructure management.
+
+However, it's important to still follow basic security principles:
+
+- **Restrict access** using Azure RBAC (Role-Based Access Control).
+- **Limit the agent's visibility** into sensitive data sources.
+- **Control network access** both to and from the AI Agent service.
+
+### 🛡️ Securing the Azure AI Agent Service
+
+In Azure AI Foundry:
+
+- **Projects** belong to **hubs**, which act as central governance points.
+- Hubs manage **security**, **networking**, and **computing resources** across multiple projects.
+- Admins can apply security controls through both the Azure AI Foundry portal and the Azure portal.
+
+Key security features at the hub level include:
+
+- **Role-Based Access Control** (RBAC)
+- **Network Access Settings**
+- **Monitoring Alerts, Metrics, and Logs**
+
+Hubs and projects are stored inside a **resource group** in your Azure subscription, but Foundry abstracts much of the complexity for developers.
+
+### 🔐 Azure AI Agent Service Role-Based Access Control (RBAC)
+
+**Azure RBAC** controls who can create, manage, or use resources.
+
+- Users from Microsoft Entra ID are assigned specific roles.
+- **System-assigned managed identities** are used by hubs and inherited by projects.
+- These identities handle secure data access and function execution on behalf of the agent.
+
+You can add users and assign roles directly from the Azure AI Foundry portal:
+
+- Navigate to the **Management Center** → **Users** (under hub or project).
+- Select **New user** to add and assign a role.
+
+### 🌐 Agent Service and Network Access
+
+Network access for AI Agents is configured at the **hub level**—but only through the **Azure portal** (not the Foundry portal).
+
+If your resources are outside Azure (e.g., in an on-premises network or a different VNet), you need:
+
+1. **Application Gateway**: Acts as a bridge between Azure and your non-Azure resources.
+2. **Private Endpoint**: Created from the Azure AI Foundry hub’s managed VNet to the Application Gateway for **private, secure access**—keeping traffic off the public internet.
+---
 ## 📚 References
 
 - [Plan and prepare to develop AI solutions on Azure](https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/?ref=collection&listId=60yka7t2o8od52&sharingId=6A9F03F25E12DA9E&wt.mc_id=aiskillsfest_msftlearn_training_wwl_challenge_tech)  
@@ -314,3 +371,4 @@ Once you upload your data and create an index, you can use **Prompt Flow** in Az
 - [Develop an AI app with the Azure AI Foundry SDK](https://learn.microsoft.com/en-us/training/modules/ai-foundry-sdk/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
 - [Get started with AI agent development on Azure](https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
 - [Develop a RAG-based solution with your own data using Azure AI Foundry](https://learn.microsoft.com/en-us/training/modules/build-copilot-ai-studio/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
+- [Introduction to AI Agent Service Security Controls](https://learn.microsoft.com/en-us/training/modules/intro-ai-agent-service-security-controls/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
