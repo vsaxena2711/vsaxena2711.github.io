@@ -6,15 +6,8 @@
     <description>Recent content in Home on AInfraMinds</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>🧠 Create agentic AI solutions with Azure AI Foundry</title>
-      <link>http://localhost:1313/ai/ai-nsteins-notebook/agentic-ai-w-foundry/</link>
-      <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ai/ai-nsteins-notebook/agentic-ai-w-foundry/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;As part of the &lt;strong&gt;Microsoft AI Skills Fest&lt;/strong&gt;, I participated in the challenge &lt;strong&gt;&amp;ldquo;Create Agentic AI Solutions with Azure AI Foundry&amp;rdquo;&lt;/strong&gt; — and here are my key takeaways from Module 1 of the learning journey.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-module-1-plan-and-prepare-for-ai-development-on-azure&#34;&gt;📌 Module 1: Plan and Prepare for AI Development on Azure&lt;/h2&gt;&#xA;&lt;p&gt;I’ve kicked off the &lt;strong&gt;AI Skills Fest Challenge&lt;/strong&gt; by diving into Module 1: &lt;em&gt;Plan and prepare to develop AI solutions on Azure&lt;/em&gt;. This module laid the foundation for building intelligent apps using the &lt;strong&gt;Azure AI Foundry&lt;/strong&gt; platform and walked through key AI concepts, tools, and best practices.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Create an Azure Key Vault (RBAC-based) using Terraform &amp; Terragrunt</title>
       <link>http://localhost:1313/iac/code-in-action/azure-keyvault-rbac-module/</link>

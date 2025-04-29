@@ -364,6 +364,69 @@ If your resources are outside Azure (e.g., in an on-premises network or a differ
 1. **Application Gateway**: Acts as a bridge between Azure and your non-Azure resources.
 2. **Private Endpoint**: Created from the Azure AI Foundry hub’s managed VNet to the Application Gateway for **private, secure access**—keeping traffic off the public internet.
 ---
+## 🤖 Module 7 Recap: Develop an AI Agent with Azure AI Agent Service
+### 🧠 What is an AI Agent?
+
+An **AI agent** is an intelligent software service that uses **generative AI** to understand context, make decisions, and take actions—independently executing workflows or tasks. Unlike traditional apps, AI agents operate autonomously and adapt to dynamic scenarios using grounding data and tools.
+
+#### 💡 Why are AI Agents Useful?
+
+- **Automate Routine Tasks** – Free up human time by automating repetitive tasks.
+- **Enhance Decision-Making** – Process real-time data, analyze trends, and offer actionable insights.
+- **Scalability** – Handle growing workloads without a proportional increase in manpower.
+- **24/7 Availability** – Operate continuously, providing round-the-clock support or execution.
+
+#### 📌 Example Use Cases
+
+AI agents can be deployed in many roles:
+
+- Personal productivity agents  
+- Research assistants  
+- Sales and marketing support  
+- Customer service bots  
+- Developer assistants
+
+### ⚙️ How to Use Azure AI Agent Service
+
+The **Azure AI Agent Service** enables developers to build AI agents that use large language models to automate tasks, make decisions, and respond to real-world inputs.
+
+#### 🎯 Key Use Cases
+
+- Answer questions using real-time or private data
+- Take actions based on contextual input
+- Automate end-to-end workflows using AI and tool integrations
+
+#### 🛠️ Features of Azure AI Agent Service
+
+- **Automatic tool invocation** – Models can trigger tools and return results automatically.
+- **Secure conversation handling** – Thread-based conversation state management.
+- **Pre-built tools** – Includes Bing Search, file search, Azure AI Search, Azure Functions, and more.
+- **Flexible model options** – Use Azure OpenAI, Llama 3, Mistral, Cohere, etc.
+- **Enterprise-grade security** – Secure, compliant, and keyless authentication.
+- **Storage options** – Choose platform-managed or custom Azure Blob storage.
+
+### 🏗️ Develop AI Agents with Azure AI Agent Service
+
+Earlier, creating agent-like behavior required writing extensive code. Now, the Azure AI Agent Service supports **easy integration** using SDKs or REST APIs, with just a few lines of code.
+
+#### 🧠 Knowledge Tools
+
+Used to enhance the agent’s knowledge and ground prompts:
+
+- **Bing Search** – Provides real-time web data.
+- **File Search** – Leverages vector stores for file-based content.
+- **Azure AI Search** – Queries structured or unstructured datasets.
+- **Microsoft Fabric** – Integrates with Fabric Data Agent for contextual enterprise data.
+
+#### ⚡ Action Tools
+
+Used to perform actions or execute functions:
+
+- **Code Interpreter** – Executes model-generated Python code in a sandbox.
+- **Function** – Calls your own custom-defined logic.
+- **Azure Function** – Executes serverless Azure-hosted code.
+- **OpenAPI Spec** – Interacts with external APIs using OpenAPI 3.0 definitions.
+---
 ## 📚 References
 
 - [Plan and prepare to develop AI solutions on Azure](https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/?ref=collection&listId=60yka7t2o8od52&sharingId=6A9F03F25E12DA9E&wt.mc_id=aiskillsfest_msftlearn_training_wwl_challenge_tech)  
@@ -372,3 +435,4 @@ If your resources are outside Azure (e.g., in an on-premises network or a differ
 - [Get started with AI agent development on Azure](https://learn.microsoft.com/en-us/training/modules/ai-agent-fundamentals/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
 - [Develop a RAG-based solution with your own data using Azure AI Foundry](https://learn.microsoft.com/en-us/training/modules/build-copilot-ai-studio/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
 - [Introduction to AI Agent Service Security Controls](https://learn.microsoft.com/en-us/training/modules/intro-ai-agent-service-security-controls/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
+- [Develop an AI agent with Azure AI Agent Service](https://learn.microsoft.com/en-us/training/modules/develop-ai-agent-azure/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
