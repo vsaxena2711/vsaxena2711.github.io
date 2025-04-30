@@ -427,6 +427,95 @@ Used to perform actions or execute functions:
 - **Azure Function** – Executes serverless Azure-hosted code.
 - **OpenAPI Spec** – Interacts with external APIs using OpenAPI 3.0 definitions.
 ---
+## 🧩 Module 8 Recap: Integrate Custom Tools into Your AI Agent
+
+### ⚙️ Why Use Custom Tools?
+
+Custom tools in **Azure AI Agent Service** empower developers to tailor agents for specific business needs—improving productivity, accuracy, and process automation.
+
+#### 💡 Benefits of Custom Tools
+
+- **Enhanced Productivity** – Automate repetitive and manual tasks.
+- **Improved Accuracy** – Deliver consistent outputs and reduce human error.
+- **Tailored Solutions** – Address unique business scenarios with purpose-built tools.
+
+### 🌍 Common Scenarios for Custom Tools
+
+Custom tools allow AI agents to connect with external systems and perform specialized tasks across industries:
+
+#### 🛍️ Customer Support Automation
+
+- **Tool**: Connect to CRM system  
+- **Function**: Retrieve orders, process refunds, update shipping  
+- **Outcome**: Faster query resolution and improved satisfaction
+
+#### 🏭 Inventory Management
+
+- **Tool**: Link to inventory system  
+- **Function**: Monitor stock, predict restocking, place orders  
+- **Outcome**: Streamlined operations and efficient supply chain
+
+#### 🏥 Healthcare Scheduling
+
+- **Tool**: Custom scheduling integration  
+- **Function**: Suggest slots, access records, send reminders  
+- **Outcome**: Better patient experience and reduced admin load
+
+#### 🧑‍💻 IT Helpdesk Support
+
+- **Tool**: Connect to ticketing and knowledge base  
+- **Function**: Troubleshoot, escalate, track tickets  
+- **Outcome**: Faster issue resolution and improved productivity
+
+#### 🎓 E-Learning and Training
+
+- **Tool**: Connect to LMS  
+- **Function**: Recommend courses, track progress, answer queries  
+- **Outcome**: Engaged learners and efficient course delivery
+
+### 🔧 Options for Implementing Custom Tools
+
+Azure AI Agent Service supports three main approaches:
+
+#### 🔁 Function Calling
+
+- Dynamically execute custom functions with defined arguments
+- Best for integrating logic and workflows directly within your agent
+- Language-agnostic and lightweight
+
+#### ⚡ Azure Functions
+
+- Event-driven, serverless execution model
+- Use triggers (e.g., HTTP requests) and bindings to connect with other services
+- Ideal for real-time, reactive workflows
+
+#### 🌐 OpenAPI Specification Tools
+
+- Connect to external APIs using **OpenAPI 3.0**
+- Enables scalable, standardized API integrations
+- Helps with code generation, documentation, and design consistency
+
+### 🛠️ How to Integrate Custom Tools
+
+Custom tools can be embedded into your AI agents based on your organizational setup:
+
+#### 🧩 Function Calling
+
+- Add code-defined functions within the agent project
+- Great for extending agent logic
+- Functions may call other services or APIs internally
+
+#### 🔄 Azure Functions
+
+- Perfect for responding to triggers like message queues or HTTP calls
+- Supports lightweight, scalable, and event-based processing
+
+#### 🌐 OpenAPI Tools
+
+- Define tools based on **OpenAPI 3.0 specs**
+- Let agents interact with third-party APIs in a standardized way
+- Great for automating operations that require external system access
+---
 ## 📚 References
 
 - [Plan and prepare to develop AI solutions on Azure](https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/?ref=collection&listId=60yka7t2o8od52&sharingId=6A9F03F25E12DA9E&wt.mc_id=aiskillsfest_msftlearn_training_wwl_challenge_tech)  
@@ -436,3 +525,4 @@ Used to perform actions or execute functions:
 - [Develop a RAG-based solution with your own data using Azure AI Foundry](https://learn.microsoft.com/en-us/training/modules/build-copilot-ai-studio/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
 - [Introduction to AI Agent Service Security Controls](https://learn.microsoft.com/en-us/training/modules/intro-ai-agent-service-security-controls/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
 - [Develop an AI agent with Azure AI Agent Service](https://learn.microsoft.com/en-us/training/modules/develop-ai-agent-azure/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
+- [Integrate custom tools into your agent](https://learn.microsoft.com/en-us/training/modules/build-agent-with-custom-tools/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
