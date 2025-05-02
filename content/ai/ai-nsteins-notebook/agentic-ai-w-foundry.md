@@ -8,6 +8,19 @@ draft: true
 > As part of the **Microsoft AI Skills Fest**, I participated in the challenge **"Create Agentic AI Solutions with Azure AI Foundry"** — and here are my key takeaways from Module 1 of the learning journey.
 
 ---
+## 🔗 Quick Navigation
+
+- [📌 Module 1: Plan and Prepare for AI Development on Azure](#-module-1-plan-and-prepare-for-ai-development-on-azure)
+- [🔍 Module 2: Choose and Deploy Models in Azure AI Foundry](#-module-2-choose-and-deploy-models-in-azure-ai-foundry)
+- [🔍 Module 3: What is Azure AI Foundry SDK?](#-module-3-what-is-azure-ai-foundry-sdk)
+- [🤖 Module 4 : Get Started with AI Agent Development on Azure](#-module-4--get-started-with-ai-agent-development-on-azure)
+- [📚 Module 5 : Develop a RAG-Based Solution with Your Own Data Using Azure AI Foundry](#-module-5--develop-a-rag-based-solution-with-your-own-data-using-azure-ai-foundry)
+- [🔒 Module 6: Introduction to AI Agent Service Security Controls](#-module-6-introduction-to-ai-agent-service-security-controls)
+- [🤖 Module 7 Recap: Develop an AI Agent with Azure AI Agent Service](#-module-7-recap-develop-an-ai-agent-with-azure-ai-agent-service)
+- [🧩 Module 8 Recap: Integrate Custom Tools into Your AI Agent](#-module-8-recap-integrate-custom-tools-into-your-ai-agent)
+- [🧠 Module 9 Recap: Orchestrate a Multi-Agent Solution Using Semantic Kernel](#-module-9-recap-orchestrate-a-multi-agent-solution-using-semantic-kernel)
+
+---
 ## 📌 Module 1: Plan and Prepare for AI Development on Azure
 
 I’ve kicked off the **AI Skills Fest Challenge** by diving into Module 1: *Plan and prepare to develop AI solutions on Azure*. This module laid the foundation for building intelligent apps using the **Azure AI Foundry** platform and walked through key AI concepts, tools, and best practices.
@@ -175,7 +188,6 @@ A key advantage of this approach is **easy model switching**—just update the m
 Use the method `AIProjectClient.get_azure_openai_client()` to connect to the **Azure OpenAI service** resource in your project.  
 This returns an **OpenAI client**, which you can use to seamlessly interact with models deployed to the Azure OpenAI service.
 
----
 
 ## 🤔 What are AI Agents?
 
@@ -184,7 +196,6 @@ This returns an **OpenAI client**, which you can use to seamlessly interact with
 Example:  
 An AI agent could help employees manage expense claims by answering questions about corporate policy and automatically submitting recurring claims like monthly cellphone bills, or routing claims to appropriate approvers.
 
----
 
 ## 🛠️ Options for Building AI Agents
 
@@ -516,6 +527,66 @@ Custom tools can be embedded into your AI agents based on your organizational se
 - Let agents interact with third-party APIs in a standardized way
 - Great for automating operations that require external system access
 ---
+## 🧠 Module 9 Recap: Orchestrate a Multi-Agent Solution Using Semantic Kernel
+### 🧩 What is the Semantic Kernel Agent Framework?
+
+**Semantic Kernel** is an open-source SDK that helps developers integrate AI models into their applications. Its **Agent Framework** adds capabilities for building intelligent, task-oriented agents that can reason, collaborate, and act autonomously.
+
+#### 🔧 Core Concepts
+
+- **Agents** – Autonomous entities powered by language models, functions, and memory.
+- **Agent Collaboration** – Agents can work together using `AgentGroupChat`, enabling back-and-forth communication among specialized agents.
+- **Kernel** – Acts as the execution engine for AI interactions and function orchestration.
+- **Tools & Plugins** – Allow agents to perform tasks like file search or code execution.
+- **History** – Maintains conversation memory for contextual, multi-turn conversations.
+
+#### 🧠 Agent Types Supported
+
+- **AzureAIAgent** – Conversational agent with tool integration and state management.
+- **ChatCompletionAgent** – Designed for natural dialogue and chat scenarios.
+- **OpenAIAssistantAgent** – Optimized for multi-step, goal-driven interactions.
+
+### 💬 Create a Multi-Agent Group Chat
+
+The **AgentGroupChat** feature enables multiple agents to collaborate dynamically in a shared conversation.
+
+#### 🗨️ Chat Modes
+
+- **Single-turn**: A specific agent is invoked once based on user input.
+- **Multi-turn**: Agents take turns responding until a defined termination condition is met.
+
+Messages can be added using the `ChatMessageContent` object, including the sender's role and the message itself.
+
+### 🧠 Design an Agent Selection Strategy
+
+In a multi-agent setup, selecting the right agent is critical for accurate, efficient, and scalable interactions.
+
+#### 🎯 Why Agent Selection Matters
+
+- **Accuracy** – Ensures responses come from domain-relevant agents.
+- **Efficiency** – Reduces unnecessary processing and improves response time.
+- **Scalability** – Supports larger teams of agents without overwhelming any one.
+
+#### ⚙️ How It Works
+
+- **Single-turn**: Uses intent recognition or developer-defined rules to pick the right agent.
+- **Multi-turn**: Tracks context and dynamically switches agents as conversation topics evolve.
+
+> 🔄 Tip: You can **truncate chat history** to reduce token usage and improve performance while retaining the last relevant message for agent selection.
+
+### 🔚 Define a Chat Termination Strategy
+
+To avoid endless conversations, the framework uses a **termination strategy** that determines when the conversation has met its goal.
+
+#### ✅ Why Use a Termination Strategy?
+
+- **Efficiency** – Prevents unnecessary computation and infinite loops.
+- **User Satisfaction** – Keeps interactions focused and concise.
+- **Goal Clarity** – Signals when a task or workflow has been completed.
+
+Once the chat is marked as **completed**, you’ll need to **reset the state** to allow further use of the `AgentGroupChat` instance.
+
+---
 ## 📚 References
 
 - [Plan and prepare to develop AI solutions on Azure](https://learn.microsoft.com/en-us/training/modules/prepare-azure-ai-development/?ref=collection&listId=60yka7t2o8od52&sharingId=6A9F03F25E12DA9E&wt.mc_id=aiskillsfest_msftlearn_training_wwl_challenge_tech)  
@@ -526,3 +597,4 @@ Custom tools can be embedded into your AI agents based on your organizational se
 - [Introduction to AI Agent Service Security Controls](https://learn.microsoft.com/en-us/training/modules/intro-ai-agent-service-security-controls/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
 - [Develop an AI agent with Azure AI Agent Service](https://learn.microsoft.com/en-us/training/modules/develop-ai-agent-azure/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
 - [Integrate custom tools into your agent](https://learn.microsoft.com/en-us/training/modules/build-agent-with-custom-tools/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
+- [Orchestrate a multi-agent solution using Semantic Kernel](https://learn.microsoft.com/en-us/training/modules/orchestrate-semantic-kernel-multi-agent-solution/?wt.mc_id=challenges_active_registration_confirmation_email_learn)
