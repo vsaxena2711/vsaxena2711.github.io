@@ -6,15 +6,8 @@
     <description>Recent content in Home on AInfraMinds</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>🧠🚀 Meet Azure AI Foundry’s Magic. Drag. Drop. Deploy. REPEAT</title>
-      <link>http://localhost:1313/ai/synth-minds-in-action/ai-foundry-ai-agent/</link>
-      <pubDate>Mon, 05 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ai/synth-minds-in-action/ai-foundry-ai-agent/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;Like Remy the rat in &lt;strong&gt;Ratatouille&lt;/strong&gt; — &lt;strong&gt;&amp;ldquo;Anyone can Cook&amp;rdquo;&lt;/strong&gt;.&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;With Azure AI Foundry, anyone can build AI. Just drag, drop, and let the bot cook.&lt;/em&gt; 👨‍🍳🤖&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Welcome to the world of &lt;strong&gt;Azure AI Foundry&lt;/strong&gt;, where &lt;strong&gt;Prompt Flow&lt;/strong&gt; makes AI development feel less like programming and more like storytelling. Whether you&amp;rsquo;re an AI newbie or a seasoned dev, this platform strips away the noise and lets you focus on building &lt;strong&gt;agentic solutions&lt;/strong&gt; with clarity and speed.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Create an Azure Key Vault (RBAC-based) using Terraform &amp; Terragrunt</title>
       <link>http://localhost:1313/iac/code-in-action/azure-keyvault-rbac-module/</link>
