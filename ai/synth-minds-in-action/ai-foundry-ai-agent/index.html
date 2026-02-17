@@ -1,0 +1,308 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>🧠🚀 Meet Azure AI Foundry’s Magic. Drag. Drop. Deploy. REPEAT | AInfraMinds</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9KS4FM50S"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-Q9KS4FM50S")</script><link rel=stylesheet href=/css/custom.css><title>🧠🚀 Meet Azure AI Foundry’s Magic. Drag. Drop. Deploy. REPEAT | AInfraMinds</title><meta name=description content="Explore how Azure AI Foundry makes it insanely easy to go from idea to AI with its drag-and-drop Prompt Flow interface. No fluff. Just flow."><meta name=keywords content="Azure,Terraform,IaC,DevOps,AI,Terragrunt,Azure CLI,Cloud Engineering"><meta name=author content="Vaibhav Saxena"><meta name=robots content="index, follow"><meta property="og:title" content="🧠🚀 Meet Azure AI Foundry’s Magic. Drag. Drop. Deploy. REPEAT"><meta property="og:description" content="Explore how Azure AI Foundry makes it insanely easy to go from idea to AI with its drag-and-drop Prompt Flow interface. No fluff. Just flow."><meta property="og:url" content="https://ainframinds.com/ai/synth-minds-in-action/ai-foundry-ai-agent/"><meta property="og:type" content="article"><meta name=twitter:card content="summary"><meta name=twitter:title content="🧠🚀 Meet Azure AI Foundry’s Magic. Drag. Drop. Deploy. REPEAT"><meta name=twitter:description content="Explore how Azure AI Foundry makes it insanely easy to go from idea to AI with its drag-and-drop Prompt Flow interface. No fluff. Just flow."><script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","headline":"🧠🚀 Meet Azure AI Foundry’s Magic. Drag. Drop. Deploy. REPEAT","description":"Explore how Azure AI Foundry makes it insanely easy to go from idea to AI with its drag-and-drop Prompt Flow interface. No fluff. Just flow.","author":{"@type":"Person","name":"Vaibhav Saxena"},"datePublished":"2025-09-05 00:00:00 \u002b0000 UTC"}</script></head><body><h1>AInfraMinds</h1><nav><ul><li><a href=/about/>About</a></li><li><a href=/contact/>Contact</a></li></ul></nav><main class=main><blockquote><p><em>Like Remy the rat in <strong>Ratatouille</strong> — <strong>&ldquo;Anyone can Cook&rdquo;</strong>.</em><br><em>With Azure AI Foundry, anyone can build AI. Just drag, drop, and let the bot cook.</em> 👨‍🍳🤖</p></blockquote><p>Welcome to the world of <strong>Azure AI Foundry</strong>, where <strong>Prompt Flow</strong> makes AI development feel less like programming and more like storytelling. Whether you&rsquo;re an AI newbie or a seasoned dev, this platform strips away the noise and lets you focus on building <strong>agentic solutions</strong> with clarity and speed.</p><p>In this post, I’ll walk you through how I used Azure AI Foundry to create a working AI bot using <strong>Prompt Flow</strong>, including:</p><ul><li>The magic behind the drag-and-drop experience 🎨</li><li>Connecting tools, prompts, and data without writing heavy code 🔌</li><li>Deploying it all with ML Endpoints — no dev-ops chaos 🔧</li><li>Lessons learned and what’s next on this AI journey 🔄</li></ul><hr><h2 id=-use-case-what-this-bot-actually-does>🧩 Use Case: What This Bot Actually Does</h2><p>Before we dive into building, let’s talk about the <strong>&ldquo;why&rdquo;</strong>. This POC simulates a unified chatbot assistant designed to support multiple enterprise workflows through natural language — turning scattered systems into one seamless AI-driven interface.</p><h3 id=-business-use-cases>🧠 Business Use Cases</h3><p>The bot is built to understand and act on the following types of queries:</p><ul><li><strong>GetJiraTicket</strong>: Retrieve ticket details based on a Jira-style ID (e.g., <code>ABC-123</code>).</li><li><strong>GetCommitsForTicket</strong>: Fetch Git commits associated with a specific ticket ID.</li><li><strong>SearchConfluenceDocs</strong>: Look through internal documentation (like Confluence) using natural-language search.</li><li><strong>SearchSharePointDocs</strong>: Find SharePoint-stored SOPs or internal guides based on keywords.</li></ul><h3 id=-simulated-environment-setup>🧪 Simulated Environment Setup</h3><p>Since real enterprise tools weren’t available for this demo, we simulated them using accessible public resources:</p><table><thead><tr><th>Real Tool</th><th>Simulated Using</th></tr></thead><tbody><tr><td>Jira Tickets</td><td>          GitHub Issues</td></tr><tr><td>GitLab Commits</td><td>          GitHub Commits API</td></tr><tr><td>Confluence Docs</td><td>          GitHub Markdown Files (<code>/docs</code> folder)</td></tr><tr><td>SharePoint Docs</td><td>          Azure Blob Storage with public <code>.txt</code> files</td></tr></tbody></table><p>This setup lets us test core logic and integration patterns without exposing real production data — perfect for a secure and cost-effective POC.</p><p>Next, let’s explore how you can build this out yourself using Azure AI Foundry.</p><hr><h2 id=-getting-started-from-zero-to-ai-hero-with-azure-ai-foundry>🛠️ Getting Started: From Zero to AI Hero with Azure AI Foundry</h2><p>If you&rsquo;re brand new to <strong>Azure AI Foundry</strong>, this is your launchpad. Follow these steps to create your first project, explore available models, and deploy one — all inside the Foundry portal.</p><h3 id=1-set-up-your-ai-workspace>1️⃣ Set Up Your AI Workspace</h3><p>Your journey starts with an <strong>AI hub</strong> — a collaborative space that houses one or more projects.</p><ul><li>Open <a href=https://ai.azure.com>https://ai.azure.com</a> and sign in with your Azure credentials.</li><li>Close any welcome messages or side panels that pop up.</li><li>Click on <strong>+ Create project</strong>.</li><li>In the wizard:<ul><li>Give your project a name.</li><li>Choose to <strong>create a new hub</strong> if prompted.</li></ul></li><li>Click <strong>Customize</strong>, and then provide:<ul><li><strong>Hub Name</strong></li><li><strong>Subscription</strong>: Select your Azure subscription</li><li><strong>Resource Group</strong>: Create or pick one</li><li><strong>Location</strong>: Click <strong>Help me choose</strong>, select <code>gpt-4o</code>, and follow the region recommendation</li><li><strong>Connect AI Services</strong>: Create a new Azure AI resource</li><li><strong>AI Search</strong>: Skip it for now</li></ul></li></ul><p>Hit <strong>Next</strong>, review your setup, and then click <strong>Create</strong>. Once it’s ready, close any tips and explore your project space.</p><h3 id=2-explore-models-with-built-in-benchmarks>2️⃣ Explore Models with Built-In Benchmarks</h3><p>Foundry offers a <strong>Model Catalog</strong> to help you find the right model through specs and benchmark scores.</p><ul><li>In the left menu, click <strong>Model Catalog</strong>.</li><li>Search for <code>gpt-4o</code> and click on the model name.</li><li>Review the <strong>description</strong> and switch to the <strong>Benchmarks</strong> tab for comparison insights.</li><li>Use the back arrow to return to the catalog.</li><li>Now search for <code>phi-3.5-mini-instruct</code> and check its details too.</li></ul><p>This quick compare helps you pick the best-fit model for your use case.</p><h3 id=3-deploy-a-model-without-the-headaches>3️⃣ Deploy a Model (Without the Headaches)</h3><p>Once you&rsquo;ve found your model, you&rsquo;re ready to deploy. Here&rsquo;s how to do it directly from the catalog:</p><ul><li>From the catalog, select <code>gpt-4o</code> again.</li><li>Click <strong>Deploy</strong>, then choose <strong>Customize</strong>.</li><li>Fill in the deployment settings:<ul><li><strong>Deployment Name</strong></li><li><strong>Type</strong>: Global Standard</li><li><strong>Version Updates</strong>: Enable automatic updates</li><li><strong>Model Version</strong>: Pick the latest one</li><li><strong>Connected Resource</strong>: Use your Azure OpenAI connection</li><li><strong>TPM (Tokens per Minute)</strong>: Set to 50K or your max available</li><li><strong>Content Filter</strong>: DefaultV2</li></ul></li></ul><p>Click <strong>Deploy</strong> and wait for it to finish. That’s it — your model is now live and ready to use!</p><hr><h2 id=-creating-your-first-prompt-flow-where-the-magic-begins>🔄 Creating Your First Prompt Flow: Where the Magic Begins</h2><p>With your project and model ready, it’s time to build the brain — enter <strong>Prompt Flow</strong>.</p><p>Prompt Flow is the visual orchestration layer of Azure AI Foundry. Think of it like a low-code canvas where you connect data, prompts, tools, and Python logic using simple drag-and-drop nodes. It brings structure to your AI agent&rsquo;s thought process — from understanding a question to returning a useful answer.</p><h3 id=-how-to-create-a-prompt-flow>🚀 How to Create a Prompt Flow</h3><p>Here’s how to get started:</p><ul><li>In your AI Foundry project, go to the <strong>Prompt Flows</strong> tab on the left menu.</li><li>Click <strong>+ Create Flow</strong>.</li><li>Give your flow a name, like <code>SupportBotFlow</code>, and click <strong>Create</strong>.</li></ul><p>Once created, you’ll be taken to the flow editor — a clean, node-based canvas where all the action happens.</p><h3 id=-what-comes-by-default>🧱 What Comes by Default?</h3><p>Every new flow starts with three built-in components:</p><ul><li><strong>Inputs Node</strong>: This defines the parameters your flow will receive (e.g., a <code>user_query</code>).</li><li><strong>Outputs Node</strong>: This defines what your flow returns (e.g., a <code>response</code> string).</li></ul><p>You’ll see empty start and end points — ready to be wired with <strong>Python nodes</strong>, <strong>LLM nodes</strong>, or other logic blocks to build your agent’s workflow.</p><h3 id=-what-you-can-add>🛠️ What You Can Add</h3><p>Prompt Flow supports these key node types:</p><ul><li><strong>Python Node</strong>: Add your own custom code — for parsing inputs, querying APIs, transforming data, etc.</li><li><strong>LLM Node</strong>: Drop in a prompt template to invoke the deployed LLM model you chose earlier.</li></ul><p>Nodes are connected by <strong>wires</strong>, letting you define how data flows from one step to another — just like a flowchart but smarter.</p><p>In the next section, I’ll break down how I created individual nodes for tasks like fetching Jira tickets, summarizing commits, and querying documents — complete with code and LLM prompt examples.</p><hr><h2 id=-node-1-fetching-github-issue-details-simulating-jira>🧩 Node 1: Fetching GitHub Issue Details (Simulating Jira)</h2><p>Let’s start by creating our first functional block in the Prompt Flow: a <strong>Python node</strong> to fetch issue data from GitHub. In our POC, this simulates retrieving ticket details from Jira based on a ticket ID like <code>ABC-123</code>.</p><h3 id=-python-node-fetch_github_issue>🐍 Python Node: <code>fetch_github_issue</code></h3><p>This node uses GitHub’s API to fetch issue details from a public (or private) repository. We wrap the logic using the <code>@tool</code> decorator from Prompt Flow, which lets this function become a reusable node on the canvas.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> promptflow <span style=color:#f92672>import</span> tool  <span style=color:#75715e># 👈 Import this!</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> requests
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>@tool</span>  <span style=color:#75715e># 👈 Decorate your function!</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>fetch_github_issue</span>(input1: str) <span style=color:#f92672>-&gt;</span> dict:
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Construct GitHub API URL</span>
+</span></span><span style=display:flex><span>    url <span style=color:#f92672>=</span> <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;https://api.github.com/repos/&lt;&gt;/poc-ai-agent-simulator/issues/</span><span style=color:#e6db74>{</span>input1<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span> 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Hardcoded GitHub token (for testing only)</span>
+</span></span><span style=display:flex><span>    token <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&lt;&gt;&#34;</span>  <span style=color:#75715e># 🔁 Replace with your actual GitHub token </span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Add Authorization header</span>
+</span></span><span style=display:flex><span>    headers <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;Authorization&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Bearer </span><span style=color:#e6db74>{</span>token<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;Accept&#34;</span>: <span style=color:#e6db74>&#34;application/vnd.github+json&#34;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Make the GET request with headers</span>
+</span></span><span style=display:flex><span>    response <span style=color:#f92672>=</span> requests<span style=color:#f92672>.</span>get(url, headers<span style=color:#f92672>=</span>headers)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Parse JSON response</span>
+</span></span><span style=display:flex><span>    data <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>json()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;title&#34;</span>: data<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;title&#34;</span>, <span style=color:#e6db74>&#34;No title found&#34;</span>),
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;body&#34;</span>: data<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;body&#34;</span>, <span style=color:#e6db74>&#34;No body found&#34;</span>)
+</span></span><span style=display:flex><span>    }
+</span></span></code></pre></div><p>📝 Note: Replace the &lt;> placeholders with your actual GitHub repo path and GitHub token for local testing. In production or shared environments, never hardcode tokens — use Key Vault or environment variables instead.</p><h3 id=-node-input>🔗 Node Input</h3><p>This node expects a single input:</p><p>input1 — the GitHub issue number to fetch
+Example: ${parse_router_output.output.query}</p><h3 id=-llm-node-generate_response>🤖 LLM Node: generate_response</h3><p>Now that we’ve fetched issue data, we pass it to a LLM node to generate a user-friendly response. This node connects to our previously deployed gpt-4o model and uses a system + user prompt combination.</p><pre tabindex=0><code>system:
+You are a helpful assistant.
+
+user:
+Based on the following GitHub Issue details:
+
+Title: {{ title }}
+Body: {{ body }}
+
+**Instructions:**
+- Base your summary strictly on the title and body content.
+- Do not assume additional issue context or status.
+- If either title or body is missing or unclear, ask for clarification.
+</code></pre><h3 id=-node-configuration>🔌 Node Configuration</h3><table><thead><tr><th><strong>Setting</strong></th><th><strong>Value</strong></th></tr></thead><tbody><tr><td>Connection</td><td><code>ai-pocaiagentsimulatorhub813931831613_aoai</code></td></tr><tr><td>API Type</td><td><code>chat</code></td></tr><tr><td>Deployment Name</td><td><code>gpt-4o</code></td></tr><tr><td>Temperature</td><td><code>1</code></td></tr><tr><td>Max Tokens</td><td><em>(default or custom)</em></td></tr><tr><td>Stop</td><td><em>(optional)</em></td></tr><tr><td>Response Format</td><td><code>{"type":"text"}</code></td></tr></tbody></table><h3 id=-llm-input-mapping>🔁 LLM Input Mapping</h3><table><thead><tr><th><strong>LLM Prompt Variable</strong></th><th><strong>Mapped From</strong></th></tr></thead><tbody><tr><td><code>title</code></td><td><code>${fetch_github_issue.output.title}</code></td></tr><tr><td><code>body</code></td><td><code>${fetch_github_issue.output.body}</code></td></tr></tbody></table><p>Together, these two nodes simulate the first core functionality of our assistant: <strong>understanding a ticket ID and summarizing its issue details clearly</strong> using real-time API data and GPT.</p><hr><h2 id=-node-2-fetching-and-summarizing-git-commits-simulating-gitlab-history>🧩 Node 2: Fetching and Summarizing Git Commits (Simulating GitLab History)</h2><p>After retrieving issue details, the next step is to trace the commit history related to that ticket. In this node, we simulate GitLab commits by fetching recent GitHub commits and filtering them by the ticket ID found in commit messages.</p><h3 id=-python-node-fetch_github_commits>🐍 Python Node: <code>fetch_github_commits</code></h3><p>This Python node queries GitHub’s Commits API, filters the results for any commit message containing the ticket ID, and returns a structured list.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> promptflow <span style=color:#f92672>import</span> tool
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> requests
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>@tool</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>fetch_github_commits</span>(ticket_query: str) <span style=color:#f92672>-&gt;</span> list:
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Hardcoded GitHub token for now</span>
+</span></span><span style=display:flex><span>    token <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&lt;&gt;&#34;</span>  <span style=color:#75715e># Replace for production </span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># GitHub API URL</span>
+</span></span><span style=display:flex><span>    url <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;https://api.github.com/repos/&lt;&gt;/poc-ai-agent-simulator/commits&#34;</span> 
+</span></span><span style=display:flex><span>    headers <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;Authorization&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Bearer </span><span style=color:#e6db74>{</span>token<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;Accept&#34;</span>: <span style=color:#e6db74>&#34;application/vnd.github+json&#34;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    params <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;per_page&#34;</span>: <span style=color:#ae81ff>10</span>  <span style=color:#75715e># limit results</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    response <span style=color:#f92672>=</span> requests<span style=color:#f92672>.</span>get(url, headers<span style=color:#f92672>=</span>headers, params<span style=color:#f92672>=</span>params)
+</span></span><span style=display:flex><span>    commits <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>json()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    matched_commits <span style=color:#f92672>=</span> []
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> <span style=color:#f92672>not</span> isinstance(commits, list):
+</span></span><span style=display:flex><span>        print(<span style=color:#e6db74>&#34;GitHub API error:&#34;</span>, commits)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> []
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> commit <span style=color:#f92672>in</span> commits:
+</span></span><span style=display:flex><span>        message <span style=color:#f92672>=</span> commit<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;commit&#34;</span>, {})<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;message&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>        print(<span style=color:#e6db74>&#34;Checking commit:&#34;</span>, message)  <span style=color:#75715e># Debug log</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> ticket_query<span style=color:#f92672>.</span>lower() <span style=color:#f92672>in</span> message<span style=color:#f92672>.</span>lower():
+</span></span><span style=display:flex><span>            matched_commits<span style=color:#f92672>.</span>append({
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;message&#34;</span>: message,
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;date&#34;</span>: commit<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;commit&#34;</span>, {})<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;author&#34;</span>, {})<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;date&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>),
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;url&#34;</span>: commit<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;html_url&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>            })
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>&#34;Matched commits:&#34;</span>, matched_commits)  <span style=color:#75715e># Final debug output</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> matched_commits
+</span></span></code></pre></div><blockquote><p>🔒 <strong>Tip:</strong> As before, replace <code>&lt;token></code> and the <code>&lt;repo></code> placeholder with valid values during local testing. Avoid hardcoding secrets in production environments. Use Key Vault or environment variables for secure handling.</p></blockquote><h3 id=-node-input-1>🔗 Node Input</h3><ul><li><strong>ticket_query</strong> — the same ticket ID used earlier<br>Example: <code>${parse_router_output.output.query}</code></li></ul><h3 id=-llm-node-summarize_commits>🤖 LLM Node: <code>summarize_commits</code></h3><p>This LLM node takes the filtered list of commits and turns them into a concise, human-readable summary. It uses a templated prompt to stay focused strictly on the available data.</p><p><strong>Prompt Template:</strong></p><pre tabindex=0><code class=language-jinja2 data-lang=jinja2>system:
+You are an assistant summarizing Git commit history related to a ticket.
+
+user:
+Query: {{ ticket_query }}
+
+Here are the commits retrieved:
+
+{% for commit in commits %}
+- {{ commit.message }}
+{% endfor %}
+
+**Instructions:**
+- Summarize only the commit messages shown above.
+- Do not infer or imagine commits not listed.
+- If the list is empty or unclear, respond accordingly.
+</code></pre><h3 id=-llm-input-mapping-1>🔁 LLM Input Mapping</h3><table><thead><tr><th><strong>LLM Prompt Variable</strong></th><th><strong>Mapped From</strong></th></tr></thead><tbody><tr><td><code>commits</code></td><td><code>${fetch_github_commits.output}</code></td></tr><tr><td><code>ticket_query</code></td><td><code>${parse_router_output.output}</code></td></tr></tbody></table><p>This completes the second major task of our AI assistant: <strong>retrieving and summarizing Git commit history tied to a specific ticket</strong> — a common requirement in any agile DevOps workflow.</p><hr><h2 id=-node-3-searching-confluence-like-docs-from-github>🧩 Node 3: Searching Confluence-Like Docs from GitHub</h2><p>Our next step simulates a search across internal documentation — similar to browsing Confluence pages. In this POC, we&rsquo;re using markdown files stored in a GitHub <code>/docs</code> folder as a substitute.</p><h3 id=-python-node-search_confluence_docs>🐍 Python Node: <code>search_confluence_docs</code></h3><p>This Python node scans markdown files in a specified GitHub repo folder and checks if any contain the <code>ticket_query</code> keyword. It returns the matching file names and a short excerpt from each file&rsquo;s content.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> promptflow <span style=color:#f92672>import</span> tool
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> requests
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>@tool</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>search_confluence_docs</span>(ticket_query: str) <span style=color:#f92672>-&gt;</span> list:
+</span></span><span style=display:flex><span>    token <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&lt;&gt;&#34;</span>  <span style=color:#75715e># 🔁 Replace with your actual token </span>
+</span></span><span style=display:flex><span>    repo <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&lt;&gt;/poc-ai-agent-simulator&#34;</span> 
+</span></span><span style=display:flex><span>    folder_path <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;docs&#34;</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    headers <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;Authorization&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Bearer </span><span style=color:#e6db74>{</span>token<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>,
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;Accept&#34;</span>: <span style=color:#e6db74>&#34;application/vnd.github+json&#34;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># 1. List files in the docs folder</span>
+</span></span><span style=display:flex><span>    url <span style=color:#f92672>=</span> <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;https://api.github.com/repos/</span><span style=color:#e6db74>{</span>repo<span style=color:#e6db74>}</span><span style=color:#e6db74>/contents/</span><span style=color:#e6db74>{</span>folder_path<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>    response <span style=color:#f92672>=</span> requests<span style=color:#f92672>.</span>get(url, headers<span style=color:#f92672>=</span>headers)
+</span></span><span style=display:flex><span>    files <span style=color:#f92672>=</span> response<span style=color:#f92672>.</span>json()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    results <span style=color:#f92672>=</span> []
+</span></span><span style=display:flex><span>    keyword <span style=color:#f92672>=</span> ticket_query<span style=color:#f92672>.</span>lower()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> file <span style=color:#f92672>in</span> files:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> file[<span style=color:#e6db74>&#34;name&#34;</span>]<span style=color:#f92672>.</span>endswith(<span style=color:#e6db74>&#34;.md&#34;</span>):
+</span></span><span style=display:flex><span>            raw_url <span style=color:#f92672>=</span> file[<span style=color:#e6db74>&#34;download_url&#34;</span>]
+</span></span><span style=display:flex><span>            content_response <span style=color:#f92672>=</span> requests<span style=color:#f92672>.</span>get(raw_url)
+</span></span><span style=display:flex><span>            content <span style=color:#f92672>=</span> content_response<span style=color:#f92672>.</span>text<span style=color:#f92672>.</span>lower()
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> keyword <span style=color:#f92672>in</span> content:
+</span></span><span style=display:flex><span>                results<span style=color:#f92672>.</span>append({
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;filename&#34;</span>: file[<span style=color:#e6db74>&#34;name&#34;</span>],
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;excerpt&#34;</span>: content[:<span style=color:#ae81ff>300</span>]
+</span></span><span style=display:flex><span>                })
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> results
+</span></span></code></pre></div><blockquote><p>🔒 <strong>Tip:</strong> Use environment variables or a secret store like <strong>Azure Key Vault</strong> to manage tokens securely in production.</p></blockquote><h3 id=-node-input-2>🔗 Node Input</h3><ul><li><strong>ticket_query</strong> — passed directly from the user’s query<br>Example: <code>${parse_router_output.output.query}</code></li></ul><h3 id=-llm-node-summarize_confluence_search>🤖 LLM Node: <code>summarize_confluence_search</code></h3><p>This node takes the search results and uses an LLM to summarize the most relevant information. It also suggests which documents to explore further — without hallucinating any extra content.</p><p><strong>Prompt Template:</strong></p><pre tabindex=0><code class=language-jinja2 data-lang=jinja2>system:
+You are an expert assistant specializing in knowledge management and document retrieval.
+
+user:
+The user is investigating Confluence documentation related to: **{{ ticket_query }}**
+
+Here are the excerpts found from the search results:
+
+{% for doc in search_confluence_docs %}
+- **File**: {{ doc.filename }}
+- **Excerpt**: &#34;{{ doc.excerpt }}&#34;
+{% endfor %}
+
+**Instructions:**
+- Summarize the key information found across these documents.
+- Highlight which documents seem most relevant.
+- Suggest if any document should be reviewed in more detail.
+- Only refer to the excerpts shown above.
+- Do not assume or create content not present in the listed files.
+- If the list is empty, respond by stating no relevant documents were found.
+
+### 🔁 LLM Input Mapping
+
+| **LLM Prompt Variable**     | **Mapped From**                                |
+|-----------------------------|------------------------------------------------|
+| `search_confluence_docs`    | `${search_confluence_docs.output}`             |
+| `ticket_query`              | `${parse_router_output.output.query}`          |
+
+With this step, the assistant gains the ability to **search and summarize relevant documentation** — helping users discover insights hidden in internal knowledge bases without ever leaving the chat.
+
+---
+
+## 🧩 Node 4: Searching SharePoint-Like Docs in Azure Blob Storage
+
+The final key workflow in our POC is simulating SharePoint document search. In the real world, SharePoint often stores SOPs, team guides, and process documents. For this prototype, we emulate that by using plain `.txt` files stored in **Azure Blob Storage**.
+
+### 🐍 Python Node: `search_sharepoint_docs`
+
+This node connects to an Azure Blob Storage container, reads `.txt` files, and checks for content that matches the user’s query. If a match is found, it returns the file name and a short excerpt.
+
+```python
+from promptflow import tool
+from azure.storage.blob import BlobServiceClient
+import io
+
+@tool
+def search_sharepoint_docs(ticket_query: str) -&gt; list:
+    connection_string = &#34;DefaultEndpointsProtocol=https;AccountName=&lt;&gt;;AccountKey=&lt;&gt;==;EndpointSuffix=core.windows.net&#34; 
+    container_name = &#34;documents&#34;
+
+    blob_service_client = BlobServiceClient.from_connection_string(connection_string)
+    container_client = blob_service_client.get_container_client(container_name)
+
+    results = []
+    keyword = ticket_query.lower()
+
+    for blob in container_client.list_blobs():
+        if not blob.name.endswith(&#34;.txt&#34;):
+            continue  # Only process .txt files
+
+        blob_client = container_client.get_blob_client(blob)
+        blob_data = blob_client.download_blob().readall()
+        content = blob_data.decode(&#34;utf-8&#34;).lower()
+
+        if keyword in content:
+            results.append({
+                &#34;filename&#34;: blob.name,
+                &#34;excerpt&#34;: content[:300]
+            })
+
+    return results
+</code></pre><blockquote><p>🔒 <strong>Tip:</strong> Always use <strong>Azure Key Vault</strong> or secure environment variables for managing your Blob Storage connection string. Avoid hardcoding secrets in your code.</p></blockquote><h3 id=-node-input-3>🔗 Node Input</h3><ul><li><strong>ticket_query</strong> — same query passed from earlier<br>Example: <code>${parse_router_output.output.query}</code></li></ul><h3 id=-llm-node-summarize_sharepoint_docs>🤖 LLM Node: <code>summarize_sharepoint_docs</code></h3><p>This LLM node processes the output of our Blob Storage document search and summarizes the most relevant content — just like an AI assistant browsing SharePoint for you.</p><p><strong>Prompt Template:</strong></p><pre tabindex=0><code class=language-jinja2 data-lang=jinja2>system:
+You are an expert assistant specializing in knowledge management and document retrieval.
+
+user:
+The user is investigating SharePoint documents for the topic or ticket: **{{ ticket_query }}**.
+
+Here are the excerpts found from the search results:
+
+{% for doc in search_sharepoint_docs %}
+- **File**: {{ doc.filename }}
+- **Excerpt**: &#34;{{ doc.excerpt }}&#34;
+{% endfor %}
+
+**Instructions:**
+- Only reference and summarize the content of the documents listed above.
+- Do not invent or assume the existence of additional documents.
+- If only one document is listed, summarize only that one.
+- If no documents are listed, say &#34;No relevant documents were found.&#34;
+</code></pre><h3 id=-llm-input-mapping-2>🔁 LLM Input Mapping</h3><table><thead><tr><th><strong>LLM Prompt Variable</strong></th><th><strong>Mapped From</strong></th></tr></thead><tbody><tr><td><code>search_sharepoint_docs</code></td><td><code>${search_sharepoint_docs.output}</code></td></tr><tr><td><code>ticket_query</code></td><td><code>${parse_router_output.output}</code></td></tr></tbody></table><hr><h2 id=-node-5-smart-routing-with-router_llm>🧩 Node 5: Smart Routing with <code>router_llm</code></h2><p>Before any task-specific nodes are triggered, we need a way to <strong>understand user intent</strong> and route the query to the correct internal tool — whether that’s fetching an issue, summarizing commits, or searching documents.</p><p>That’s the role of the <code>router_llm</code> node: a lightweight, intelligent router that interprets user queries and decides <strong>which downstream tool</strong> should handle the request.</p><h3 id=-llm-node-router_llm>🤖 LLM Node: <code>router_llm</code></h3><p>This LLM node uses a prompt that defines available tools and their purpose. Based on the user’s input, it returns a clean JSON response specifying:</p><ul><li><code>tool</code>: which tool should be used (<code>GetGitHubIssue</code>, <code>GetCommitsForTicket</code>, etc.)</li><li><code>query</code>: the value extracted from the user input (e.g., <code>ABC-123</code>, <code>#25</code>, or a natural-language search string)</li></ul><p><strong>Prompt Template:</strong></p><pre tabindex=0><code class=language-jinja2 data-lang=jinja2>system:
+You are a router assistant. Your job is to decide which internal tool to use based on the user&#39;s input.
+
+Available tools:
+- GetGitHubIssue → used **only** when the user asks about GitHub **issue number** (like `#23`, `issue 5`, etc.)
+- GetCommitsForTicket → used when the user asks about a **ticket ID** or task reference like `ABC-123` that appears in commit messages
+- SearchConfluenceDocs → used when the user asks for internal documentation
+- SearchSharePointDocs → used when the user wants files, guides, PDFs, or SOPs from storage
+- HandleChitChat → used when the user is making casual conversation, greetings, jokes, or unrelated questions
+
+Respond only with **raw JSON**. Do **not** include markdown, formatting, or explanations. The response must be exactly like:
+{
+  &#34;tool&#34;: &#34;&lt;tool_name&gt;&#34;,
+  &#34;query&#34;: &#34;&lt;the relevant value extracted from user query&gt;&#34;
+}
+
+For HandleChitChat, return the full user query as the `query` value.
+
+user:
+{{ user_query }}
+</code></pre><h4 id=-node-input-4>🔗 Node Input</h4><ul><li><strong>user_query</strong> — the original raw input from the user<br>Example: <code>${inputs.ticket_query}</code></li></ul><p>This routing step is what makes the assistant <strong>agentic</strong> — it dynamically decides what action to take based on user intent, instead of relying on rigid input types or menus.</p><hr><h2 id=-node-6-formatting-the-final-response-for-the-user>🧩 Node 6: Formatting the Final Response for the User</h2><p>Once the right tool has done its job — whether it’s fetching a GitHub issue, summarizing commits, or searching documents — we need to format the final response in a clean and user-friendly way.</p><p>That’s where the <strong><code>final_response_formatter</code></strong> node comes in. This node acts like the <strong>final narrator</strong> of your AI assistant, intelligently choosing which tool&rsquo;s output to present and formatting it with appropriate context.</p><h3 id=-llm-node-final_response_formatter>🤖 LLM Node: <code>final_response_formatter</code></h3><p>This LLM node receives output from all possible downstream tools and decides what to show back to the user, using conditional logic in the prompt.</p><p><strong>Prompt Template:</strong></p><pre tabindex=0><code class=language-jinja2 data-lang=jinja2>system:
+You are a summarizer assistant that returns the final result from the selected tool. Based on the user’s query, one of the tools has returned a relevant response.
+
+user:
+{% if generate_response %}
+### 🔍 Direct Answer  
+{{ generate_response }}
+
+{% elif summarize_commits %}
+### 📌 GitHub Commits Summary  
+{{ summarize_commits }}
+
+{% elif summarize_confluence_search %}
+### 📘 Confluence Document Summary  
+{{ summarize_confluence_search }}
+
+{% elif summarize_sharepoint_docs %}
+### 📁 SharePoint Document Summary  
+{{ summarize_sharepoint_docs }}
+
+{% elif handle_chitchat %}
+### 💬 Friendly Chat  
+{{ handle_chitchat }}
+
+{% else %}
+❗ No relevant response was generated by any tool. Please try rephrasing your query.
+{% endif %}
+</code></pre><p>This prompt ensures only one result is displayed at a time and labels the response for clarity — giving users an easy-to-read, conversational summary.</p><h3 id=-llm-input-mapping-3>🔁 LLM Input Mapping</h3><table><thead><tr><th><strong>LLM Prompt Variable</strong></th><th><strong>Mapped From</strong></th></tr></thead><tbody><tr><td><code>generate_response</code></td><td><code>${generate_response.output}</code></td></tr><tr><td><code>handle_chitchat</code></td><td><code>${handle_chitchat.output}</code></td></tr><tr><td><code>summarize_commits</code></td><td><code>${summarize_commits.output}</code></td></tr><tr><td><code>summarize_confluence_search</code></td><td><code>${summarize_confluence_search.output}</code></td></tr><tr><td><code>summarize_sharepoint_docs</code></td><td><code>${summarize_sharepoint_docs.output}</code></td></tr></tbody></table><p>This is the <strong>final step</strong> in the flow — where everything comes together. The assistant picks the most appropriate response, wraps it with a contextual heading, and speaks back in a friendly, organized format.</p><hr><h2 id=-node-7-parsing-the-router-output>🧩 Node 7: Parsing the Router Output</h2><p>The <code>router_llm</code> node returns a JSON response that tells the assistant which internal tool to use and what query value to pass. However, because LLMs sometimes return their output wrapped in code blocks (like ```json), we need a small parser to clean and validate this output before routing it further.</p><p>That’s exactly what the <strong><code>parse_router_output</code></strong> Python node does — it acts as a <strong>sanity check and cleanup utility</strong> between the router and the rest of the flow.</p><h3 id=-python-node-parse_router_output>🐍 Python Node: <code>parse_router_output</code></h3><p>This node takes the raw string output from <code>router_llm</code>, removes any Markdown-style code fences (like ```json), and converts it into a clean Python dictionary with two keys: <code>tool</code> and <code>query</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> promptflow <span style=color:#f92672>import</span> tool
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> json
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>@tool</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>parse_router_output</span>(router_llm_output: str) <span style=color:#f92672>-&gt;</span> dict:
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>try</span>:
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Clean up markdown-style code block if present</span>
+</span></span><span style=display:flex><span>        cleaned <span style=color:#f92672>=</span> router_llm_output<span style=color:#f92672>.</span>strip()
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> cleaned<span style=color:#f92672>.</span>startswith(<span style=color:#e6db74>&#34;```json&#34;</span>):
+</span></span><span style=display:flex><span>            cleaned <span style=color:#f92672>=</span> cleaned<span style=color:#f92672>.</span>removeprefix(<span style=color:#e6db74>&#34;```json&#34;</span>)<span style=color:#f92672>.</span>removesuffix(<span style=color:#e6db74>&#34;```&#34;</span>)<span style=color:#f92672>.</span>strip()
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>elif</span> cleaned<span style=color:#f92672>.</span>startswith(<span style=color:#e6db74>&#34;```&#34;</span>):
+</span></span><span style=display:flex><span>            cleaned <span style=color:#f92672>=</span> cleaned<span style=color:#f92672>.</span>removeprefix(<span style=color:#e6db74>&#34;```&#34;</span>)<span style=color:#f92672>.</span>removesuffix(<span style=color:#e6db74>&#34;```&#34;</span>)<span style=color:#f92672>.</span>strip()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Parse the cleaned string as JSON</span>
+</span></span><span style=display:flex><span>        data <span style=color:#f92672>=</span> json<span style=color:#f92672>.</span>loads(cleaned)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;tool&#34;</span>: data<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;tool&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>),
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;query&#34;</span>: data<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;query&#34;</span>, <span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>except</span> <span style=color:#a6e22e>Exception</span> <span style=color:#66d9ef>as</span> e:
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;tool&#34;</span>: <span style=color:#e6db74>&#34;&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;query&#34;</span>: <span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;ERROR: </span><span style=color:#e6db74>{</span>str(e)<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>        }
+</span></span></code></pre></div><h3 id=-node-input-5>🔗 Node Input</h3><ul><li><strong>router_llm_output</strong> — the raw JSON response string from the router LLM<br>Example: <code>${router_llm.output}</code></li></ul><p>This parser makes your flow more <strong>robust and production-ready</strong>, handling common formatting quirks from LLMs and ensuring downstream nodes get clean, structured input to work with.</p><hr><h2 id=-node-8-handling-casual-chat-with-handle_chitchat>🧩 Node 8: Handling Casual Chat with <code>handle_chitchat</code></h2><p>Not every user message will be a technical query. Sometimes users will say things like <em>&ldquo;Hi there!&rdquo;</em>, <em>&ldquo;How’s your day?&rdquo;</em>, or even crack a joke. These don’t need to be routed to a tool or data source — they just need a friendly, human-like response.</p><p>That’s where the <strong><code>handle_chitchat</code></strong> node comes in. This LLM node is activated when the router detects casual conversation, jokes, or greetings. It ensures the assistant feels warm, interactive, and approachable — just like a real human teammate.</p><h3 id=-llm-node-handle_chitchat>🤖 LLM Node: <code>handle_chitchat</code></h3><p>This node uses a lightweight prompt designed for friendly back-and-forth interactions. It doesn’t pull from any data sources — it simply replies based on tone and intent.</p><p><strong>Prompt Template:</strong></p><pre tabindex=0><code class=language-jinja2 data-lang=jinja2>system:
+You are a friendly and engaging assistant that handles casual conversations, greetings, and small talk.
+
+user:
+{{ message }}
+</code></pre><h3 id=-node-input-6>🔗 Node Input</h3><ul><li><strong>message</strong> — extracted from the router output query<br>Example: <code>${parse_router_output.output.query}</code></li></ul><h3 id=-activation-condition>⚙️ Activation Condition</h3><p>This node is <strong>only triggered when</strong> the router returns <code>"HandleChitChat"</code> as the tool name:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-text data-lang=text><span style=display:flex><span>When ${parse_router_output.output.query} is HandleChitChat
+</span></span></code></pre></div><p>This keeps your assistant <strong>responsive and personable</strong> — creating a better user experience even when the conversation isn’t about Jira tickets or documentation.</p><hr><h2 id=-deploying-the-model-with-an-azure-ml-endpoint>🚀 Deploying the Model with an Azure ML Endpoint</h2><p>Once your model is selected and tested in Prompt Flow, the final step is to <strong>expose it via a RESTful API</strong> so external apps or scripts can query it. Azure AI Foundry makes this easy by letting you deploy to a <strong>Managed Online Endpoint (ML Endpoint)</strong>.</p><h3 id=-steps-to-deploy-via-ml-endpoint>🧭 Steps to Deploy via ML Endpoint</h3><ol><li>In your Azure AI Foundry project, go to the <strong>Deployments</strong> tab.</li><li>Choose your model (e.g., <code>gpt-4o</code>) from the list.</li><li>Click <strong>Deploy</strong> and select:<ul><li><strong>Deployment type</strong>: Managed Online Endpoint</li><li><strong>Version updates</strong>: Enabled (optional)</li><li><strong>Rate limit</strong>: Set as per your token quota (e.g., 50K TPM)</li></ul></li></ol><p>Once the deployment is complete, you’ll see an <strong>Endpoint Name</strong> listed.</p><h3 id=-retrieve-endpoint-info>🔑 Retrieve Endpoint Info</h3><p>After deployment, go to the <strong>ML Studio</strong> or use the Azure CLI/portal to fetch:</p><ul><li><strong>Scoring URL</strong></li><li><strong>API Key</strong></li></ul><p>From ML Studio:</p><ul><li>Navigate to the deployed endpoint</li><li>Click on <strong>Consume</strong></li><li>Copy the <strong>Scoring URL</strong> and <strong>Primary Key</strong></li></ul><h3 id=-test-with-curl>🧪 Test with <code>curl</code></h3><p>Here’s a simple <code>curl</code> command to test the deployed model using the scoring endpoint:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>curl -X POST &lt;YOUR_SCORE_URL&gt; <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  -H <span style=color:#e6db74>&#34;Content-Type: application/json&#34;</span> <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  -H <span style=color:#e6db74>&#34;Authorization: Bearer &lt;YOUR_API_KEY&gt;&#34;</span> <span style=color:#ae81ff>\
+</span></span></span><span style=display:flex><span><span style=color:#ae81ff></span>  -d <span style=color:#e6db74>&#39;{
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;inputs&#34;: {
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>      &#34;user_query&#34;: &#34;What is the status of ticket ABC-123?&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    }
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>  }&#39;</span>
+</span></span></code></pre></div><blockquote><p>🔁 <strong>Replace</strong> <code>&lt;YOUR_SCORE_URL></code> and <code>&lt;YOUR_API_KEY></code> with the actual values from your ML deployment.</p></blockquote><h3 id=-expected-output>✅ Expected Output</h3><p>The response will include the model&rsquo;s output (summary, commit analysis, document search, or chat) in JSON format, depending on what path the router selected internally.</p><p>This is how you can <strong>expose your Prompt Flow-based agent as a public REST API</strong>, ready to integrate with web apps, bots, or automation tools.</p><div style=text-align:center;margin-top:2rem><a href=/ai/synth-minds-in-action/ class=home-button>👉 Return to Synth Minds in Action</a><br><br><a href=/ai/ class=home-button>📦 Return to AI World</a><br><br><a href=/ class=home-button>🏠 Take Me Home</a></div><script src=https://giscus.app/client.js data-repo=vsaxena2711/vsaxena2711.github.io data-repo-id=REPO_ID data-category=General data-category-id=CATEGORY_ID data-mapping=pathname data-reactions-enabled=1 data-theme=light crossorigin=anonymous async></script></main><p>Copyright 2026. All rights reserved.</p></body></html>
