@@ -1,6 +1,6 @@
 ---
 title: "🧠🚀 Meet Azure AI Foundry’s Magic. Drag. Drop. Deploy. REPEAT"
-date: 2025-05-05
+date: 2025-09-05
 draft: true
 categories: ["AI-nstein's Notebook"]
 tags: ["Azure AI Foundry", "Prompt Flow", "Agentic AI", "Low Code AI", "Microsoft AI"]

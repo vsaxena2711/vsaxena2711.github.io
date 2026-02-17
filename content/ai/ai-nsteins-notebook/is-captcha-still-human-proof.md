@@ -1,7 +1,7 @@
 ---
 title: "Is CAPTCHA Still Human-Proof? A Turing Test in the Age of Generative AI"
-date: 2025-04-01
-draft: true
+date: 2025-08-01
+draft: false
 ---
 
 ## 🤖 A Brief History of CAPTCHA
