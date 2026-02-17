@@ -1,9 +1,9 @@
 ---
 title: "🧠 Create agentic AI solutions with Azure AI Foundry"
-date: 2025-04-23
+date: 2025-06-23
 categories: ["AI-nstein's Notebook"]
 tags: ["Azure AI Foundry", "AI Skills Fest", "Agentic AI", "Microsoft Learn"]
-draft: true
+draft: false
 ---
 > As part of the **Microsoft AI Skills Fest**, I participated in the challenge **"Create Agentic AI Solutions with Azure AI Foundry"** — and here are my key takeaways from Module 1 of the learning journey.
 
